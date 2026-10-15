@@ -1,0 +1,33 @@
+[
+  {
+    "repository": "BAAI/bge-small-zh-v1.5",
+    "revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "license": "mit",
+    "modelCard": {
+      "url": "https://huggingface.co/BAAI/bge-small-zh-v1.5/raw/7999e1d3359715c523056ef9478215996d62a620/README.md",
+      "path": "model/BAAI-MODEL-CARD.md",
+      "sha256": "c48a4eeea77f6b1d38b48ec1c5b8d4f86d5550cc43fa345a0db1b2ca1d082369",
+      "bytes": 27670
+    }
+  },
+  {
+    "repository": "Qdrant/bge-small-zh-v1.5",
+    "revision": "46fbe35fd4374a00fee7de77dfddaeb6dd6a2c59",
+    "license": "mit",
+    "modelCard": {
+      "url": "https://huggingface.co/Qdrant/bge-small-zh-v1.5/raw/46fbe35fd4374a00fee7de77dfddaeb6dd6a2c59/README.md",
+      "path": "model/Qdrant-MODEL-CARD.md",
+      "sha256": "d8d7a46d41a1a37fe4f0a5f637bf55c649310185329127d8a2204632e480be17",
+      "bytes": 24
+    }
+  },
+  {
+    "upstream": "FlagOpen/FlagEmbedding",
+    "revision": "fd1a2bdf69488ffebe0327999d4400d8c8058a0b",
+    "url": "https://raw.githubusercontent.com/FlagOpen/FlagEmbedding/fd1a2bdf69488ffebe0327999d4400d8c8058a0b/LICENSE",
+    "path": "model/LICENSE",
+    "sha256": "587a673933425dbc36ec61268d3b954051b2d3ef3c9b322ede357976055ffdd5",
+    "bytes": 1065,
+    "relationship": "The BAAI model card links to this project MIT license in its License section."
+  }
+]

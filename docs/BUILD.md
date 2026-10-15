@@ -28,7 +28,19 @@ python3 scripts/audit-local-package.py
 
 输出为 `dist/AI 深度阅读.app`。脚本会重新创建这个构建目录中的 `.app`；不修改应用的用户数据。脚本保留 Electron、Node、Python、Codex、Harness 及阅读器的许可文件，使用 ad-hoc 本机签名。运行成品不依赖全局 Node、Python 或另开 Harness 桌面应用。
 
-当前**没有**公开分发的安装包，也未完成 Developer ID、公证、Gatekeeper 下载场景、Intel、macOS 13 真机与所有 Python 原生依赖及模型的逐项发行声明。本说明不把本机可运行视为分发验收通过。
+Release 预览包按实际原生依赖声明为 macOS 15+，不把项目的 macOS 13 目标当作当前包的已通过结果：
+
+```sh
+python3 scripts/package-local.py --minimum-macos 15.0 --build-number 2 --output "dist/release-v0.1.0/AI 深度阅读.app"
+python3 scripts/audit-release.py --app "dist/release-v0.1.0/AI 深度阅读.app" --output dist/release-v0.1.0/release-audit.json
+node apps/desktop/packaging/release-smoke.mjs "dist/release-v0.1.0/AI 深度阅读.app"
+```
+
+发布构建额外排除测试会话、Python 缓存及非目标平台的 `@img/sharp-wasm32` 可选回退包，保留并实际检查 macOS 原生 sharp。Python 构建路径被脱敏，`libpython` 的本机 install ID 被改为相对运行时名称。审计检查包内路径、认证／会话／书籍残留、模型 SHA、主要许可、所有 Mach-O 最低系统及签名。
+
+第三方许可补充和来源清单位于 `apps/desktop/packaging/licenses/third-party/`；libvips 原生库的对应源码／构建材料另随 Release 提供。公开前必须保持这些声明及来源资产齐全。
+
+尚未完成 Developer ID、公证、Gatekeeper 下载实机场景、Intel、macOS 13／15 真机和自动更新。本说明不把本机可运行视为所有系统兼容性通过。
 
 ## 复用插件客户端源码
 

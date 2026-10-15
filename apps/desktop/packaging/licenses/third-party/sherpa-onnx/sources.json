@@ -1,0 +1,314 @@
+{
+  "binaryRuntimeVersion": "1.13.8",
+  "binaryGitSha1": "11afbd00",
+  "binaryOnnxruntimeVersion": "1.28.2",
+  "nodeBuildRecipePaths": [
+    ".github/scripts/node-addon/README-optional.md",
+    ".github/scripts/node-addon/README.md",
+    ".github/scripts/node-addon/index.js",
+    ".github/scripts/node-addon/notes.md",
+    ".github/scripts/node-addon/package-optional.json",
+    ".github/scripts/node-addon/package.json",
+    ".github/scripts/node-addon/run.sh",
+    ".github/scripts/test-nodejs-addon-npm.sh",
+    ".github/scripts/test-nodejs-npm.sh",
+    ".github/workflows/test-nodejs-addon-api.yaml",
+    ".github/workflows/test-nodejs-addon-npm-aarch64.yaml",
+    ".github/workflows/test-nodejs-addon-npm-win-x86.yaml",
+    ".github/workflows/test-nodejs-addon-npm.yaml",
+    ".github/workflows/test-nodejs-npm.yaml",
+    ".github/workflows/test-nodejs.yaml",
+    "scripts/node-addon-api/.gitignore",
+    "scripts/node-addon-api/CMakeLists.txt",
+    "scripts/node-addon-api/README.md",
+    "scripts/node-addon-api/lib/addon-static-import.js",
+    "scripts/node-addon-api/lib/addon.js",
+    "scripts/node-addon-api/lib/audio-tagg.js",
+    "scripts/node-addon-api/lib/keyword-spotter.js",
+    "scripts/node-addon-api/lib/non-streaming-asr.js",
+    "scripts/node-addon-api/lib/non-streaming-speaker-diarization.js",
+    "scripts/node-addon-api/lib/non-streaming-speech-denoiser.js",
+    "scripts/node-addon-api/lib/non-streaming-tts.js",
+    "scripts/node-addon-api/lib/online-speech-denoiser.js",
+    "scripts/node-addon-api/lib/punctuation.js",
+    "scripts/node-addon-api/lib/resampler.js",
+    "scripts/node-addon-api/lib/sherpa-onnx.js",
+    "scripts/node-addon-api/lib/speaker-identification.js",
+    "scripts/node-addon-api/lib/spoken-language-identification.js",
+    "scripts/node-addon-api/lib/streaming-asr.js",
+    "scripts/node-addon-api/lib/types.js",
+    "scripts/node-addon-api/lib/vad.js",
+    "scripts/node-addon-api/package.json",
+    "scripts/node-addon-api/run.sh",
+    "scripts/node-addon-api/test/test_asr_streaming_transducer.js",
+    "scripts/node-addon-api/test/test_binding.js",
+    "scripts/node-addon-api/tsconfig.json",
+    "scripts/nodejs/README.md",
+    "scripts/nodejs/index.js",
+    "scripts/nodejs/package.json",
+    "scripts/nodejs/sherpa-onnx-punctuation.js"
+  ],
+  "components": [
+    {
+      "component": "sherpa-onnx",
+      "revision": "11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf",
+      "version": "1.13.8",
+      "url": "https://github.com/csukuangfj/sherpa-onnx/archive/11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf.tar.gz",
+      "archive": "sherpa-onnx/sherpa-onnx-11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf.tar.gz",
+      "sha256": "0a8db6c55dd318f4a688faba85f7760b99a6c92e8ef8864479d418531bee1ac2",
+      "bytes": 11645413
+    },
+    {
+      "component": "asio",
+      "url": "https://github.com/chriskohlhoff/asio/archive/refs/tags/asio-1-24-0.tar.gz",
+      "expectedSha256": "cbcaaba0f66722787b1a7c33afe1befb3a012b5af3ad7da7ff0f6b8c9b7a8a5b",
+      "recipe": "cmake/asio.cmake",
+      "archive": "sherpa-onnx/asio-asio-1-24-0.tar.gz",
+      "sha256": "cbcaaba0f66722787b1a7c33afe1befb3a012b5af3ad7da7ff0f6b8c9b7a8a5b",
+      "bytes": 2902485,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/asio/asio/COPYING",
+          "sha256": "2d312781ba7ca3f5b494aec3bcca5cfbb69b7302838b2a7595d1537fc494457f",
+          "bytes": 224
+        },
+        {
+          "path": "sherpa-onnx/notices/asio/asio/LICENSE_1_0.txt",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "bytes": 1338
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "cargs",
+      "url": "https://github.com/likle/cargs/archive/refs/tags/v1.0.3.tar.gz",
+      "expectedSha256": "ddba25bd35e9c6c75bc706c126001b8ce8e084d40ef37050e6aa6963e836eb8b",
+      "recipe": "cmake/cargs.cmake",
+      "archive": "sherpa-onnx/cargs-v1.0.3.tar.gz",
+      "sha256": "ddba25bd35e9c6c75bc706c126001b8ce8e084d40ef37050e6aa6963e836eb8b",
+      "bytes": 41253,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/cargs/LICENSE.md",
+          "sha256": "e144db54f3cbd2110ccdd99cda1eaef528eb89a2f97bbee46989a7ba6b5292a3",
+          "bytes": 1091
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "eigen",
+      "url": "https://gitlab.com/libeigen/eigen/-/archive/5.0.1/eigen-5.0.1.tar.gz",
+      "expectedSha256": "e9c326dc8c05cd1e044c71f30f1b2e34a6161a3b6ecf445d56b53ff1669e3dec",
+      "recipe": "cmake/eigen.cmake",
+      "archive": "sherpa-onnx/eigen-eigen-5.0.1.tar.gz",
+      "sha256": "e9c326dc8c05cd1e044c71f30f1b2e34a6161a3b6ecf445d56b53ff1669e3dec",
+      "bytes": 2967272,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/eigen/COPYING.APACHE",
+          "sha256": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7",
+          "bytes": 11362
+        },
+        {
+          "path": "sherpa-onnx/notices/eigen/COPYING.BSD",
+          "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb",
+          "bytes": 1517
+        },
+        {
+          "path": "sherpa-onnx/notices/eigen/COPYING.MINPACK",
+          "sha256": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0",
+          "bytes": 2193
+        },
+        {
+          "path": "sherpa-onnx/notices/eigen/COPYING.MPL2",
+          "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172",
+          "bytes": 16727
+        },
+        {
+          "path": "sherpa-onnx/notices/eigen/COPYING.README",
+          "sha256": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644",
+          "bytes": 264
+        },
+        {
+          "path": "sherpa-onnx/notices/eigen/LICENSE",
+          "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+          "bytes": 16725
+        },
+        {
+          "path": "sherpa-onnx/notices/eigen/bench/btl/COPYING",
+          "sha256": "b8d0e2bcbf36f6af3cdbf94055ad2ea675d5a19fc623eb0ec82febb2b08e719b",
+          "bytes": 18109
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "hclust-cpp",
+      "url": "https://github.com/csukuangfj/hclust-cpp/archive/refs/tags/2026-02-25.tar.gz",
+      "expectedSha256": "8f14e024c709d73afb40ae69cb22de4b73dba67cbce40f2e518813da8139ab56",
+      "recipe": "cmake/hclust-cpp.cmake",
+      "archive": "sherpa-onnx/hclust-cpp-2026-02-25.tar.gz",
+      "sha256": "8f14e024c709d73afb40ae69cb22de4b73dba67cbce40f2e518813da8139ab56",
+      "bytes": 22523,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/hclust-cpp/LICENSE",
+          "sha256": "e361d842da1d290351860ad6dcce2673a1e42e4f873a3ae1ff4eb92c6adaa882",
+          "bytes": 1483
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "json",
+      "url": "https://github.com/nlohmann/json/archive/refs/tags/v3.12.0.tar.gz",
+      "expectedSha256": "4b92eb0c06d10683f7447ce9406cb97cd4b453be18d7279320f7b2f025c10187",
+      "recipe": "cmake/json.cmake",
+      "archive": "sherpa-onnx/json-v3.12.0.tar.gz",
+      "sha256": "4b92eb0c06d10683f7447ce9406cb97cd4b453be18d7279320f7b2f025c10187",
+      "bytes": 9678593,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/json/LICENSE.MIT",
+          "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603",
+          "bytes": 1076
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "kaldi-decoder",
+      "url": "https://github.com/k2-fsa/kaldi-decoder/archive/refs/tags/v0.3.0.tar.gz",
+      "expectedSha256": "b9f34cfb4fd3b1344100eead79ef4d37aa15962274b9e3056de345021f76a1b0",
+      "recipe": "cmake/kaldi-decoder.cmake",
+      "archive": "sherpa-onnx/kaldi-decoder-v0.3.0.tar.gz",
+      "sha256": "b9f34cfb4fd3b1344100eead79ef4d37aa15962274b9e3056de345021f76a1b0",
+      "bytes": 51199,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/kaldi-decoder/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "kaldi-native-fbank",
+      "url": "https://github.com/csukuangfj/kaldi-native-fbank/archive/refs/tags/v1.22.3.tar.gz",
+      "expectedSha256": "9176cc66fc7ce1edf85cf355b06e320c57db6297df74277f575183468893cf61",
+      "recipe": "cmake/kaldi-native-fbank.cmake",
+      "archive": "sherpa-onnx/kaldi-native-fbank-v1.22.3.tar.gz",
+      "sha256": "9176cc66fc7ce1edf85cf355b06e320c57db6297df74277f575183468893cf61",
+      "bytes": 71144,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/kaldi-native-fbank/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "openfst",
+      "url": "https://github.com/csukuangfj/openfst/archive/refs/tags/v1.8.5-2026-07-09.tar.gz",
+      "expectedSha256": "2ff712a32952fcb01d351121a6bc8ccf4fdc6b2aa06ce8df2b3095dedd518c0e",
+      "recipe": "cmake/openfst.cmake",
+      "archive": "sherpa-onnx/openfst-v1.8.5-2026-07-09.tar.gz",
+      "sha256": "2ff712a32952fcb01d351121a6bc8ccf4fdc6b2aa06ce8df2b3095dedd518c0e",
+      "bytes": 1501685,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/openfst/COPYING",
+          "sha256": "4300529197035fd3452350718a0b8cee984e9412c9932d7f35fcde849fc97a4b",
+          "bytes": 559
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "simple-sentencepiece",
+      "url": "https://github.com/pkufool/simple-sentencepiece/archive/refs/tags/v0.7.tar.gz",
+      "expectedSha256": "1748a822060a35baa9f6609f84efc8eb54dc0e74b9ece3d82367b7119fdc75af",
+      "recipe": "cmake/simple-sentencepiece.cmake",
+      "archive": "sherpa-onnx/simple-sentencepiece-v0.7.tar.gz",
+      "sha256": "1748a822060a35baa9f6609f84efc8eb54dc0e74b9ece3d82367b7119fdc75af",
+      "bytes": 355335,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/simple-sentencepiece/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "piper-phonemize",
+      "url": "https://github.com/csukuangfj/piper-phonemize/archive/f3ff95afc03640bc1399e113e83361192a2fafb4.zip",
+      "expectedSha256": "d9cca4e2bdc7d6dd8dffb96a4668283dbd3f77a9c194a3e530c1e8eba9406a5d",
+      "recipe": "cmake/piper-phonemize.cmake",
+      "archive": "sherpa-onnx/piper-phonemize-f3ff95afc03640bc1399e113e83361192a2fafb4.zip",
+      "sha256": "d9cca4e2bdc7d6dd8dffb96a4668283dbd3f77a9c194a3e530c1e8eba9406a5d",
+      "bytes": 9805962,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/piper-phonemize/LICENSE.md",
+          "sha256": "13746d509d74e55ea2265fbef204bb7cdbf84a8315b0207e988326cb54387028",
+          "bytes": 1071
+        },
+        {
+          "path": "sherpa-onnx/notices/piper-phonemize/licenses/uni-algo/LICENSE.md",
+          "sha256": "c55648b02873556d6ab2de14938998101fda3a0f293337542af9196435def318",
+          "bytes": 2208
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    },
+    {
+      "component": "espeak-ng-for-piper",
+      "url": "https://github.com/csukuangfj/espeak-ng/archive/ed530aa113046142eb5115cf2fc9157854d0ffe1.zip",
+      "expectedSha256": "e4e262cbe34f7fe21f91f1ba3397f2728e1f30eafbae7853f2b753a9ed13f0dd",
+      "recipe": "cmake/espeak-ng-for-piper.cmake",
+      "archive": "sherpa-onnx/espeak-ng-for-piper-ed530aa113046142eb5115cf2fc9157854d0ffe1.zip",
+      "sha256": "e4e262cbe34f7fe21f91f1ba3397f2728e1f30eafbae7853f2b753a9ed13f0dd",
+      "bytes": 18011501,
+      "notices": [
+        {
+          "path": "sherpa-onnx/notices/espeak-ng-for-piper/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "bytes": 35147
+        },
+        {
+          "path": "sherpa-onnx/notices/espeak-ng-for-piper/COPYING.APACHE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        {
+          "path": "sherpa-onnx/notices/espeak-ng-for-piper/COPYING.BSD2",
+          "sha256": "a8b0c1c7d7af6c0415c068be8cf373799d1a42b0707b79dc4ccfcaf593cd902d",
+          "bytes": 1244
+        },
+        {
+          "path": "sherpa-onnx/notices/espeak-ng-for-piper/COPYING.UCD",
+          "sha256": "be029c50df83105a810e391778b6edcb522d6cb4b4e142332aca54437a499bf7",
+          "bytes": 2788
+        },
+        {
+          "path": "sherpa-onnx/notices/espeak-ng-for-piper/src/ucd-tools/COPYING",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "bytes": 35147
+        },
+        {
+          "path": "sherpa-onnx/notices/espeak-ng-for-piper/src/ucd-tools/COPYING.UCD",
+          "sha256": "be029c50df83105a810e391778b6edcb522d6cb4b4e142332aca54437a499bf7",
+          "bytes": 2788
+        }
+      ],
+      "status": "downloaded; CMake checksum verified"
+    }
+  ]
+}

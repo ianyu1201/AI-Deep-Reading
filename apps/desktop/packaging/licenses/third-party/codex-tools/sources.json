@@ -1,0 +1,39 @@
+[
+  {
+    "component": "ripgrep",
+    "version": "15.1.0",
+    "url": "https://raw.githubusercontent.com/BurntSushi/ripgrep/15.1.0/LICENSE-MIT",
+    "upstreamRef": "15.1.0",
+    "path": "codex-tools/ripgrep/LICENSE-MIT",
+    "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+    "bytes": 1081
+  },
+  {
+    "component": "ripgrep",
+    "version": "15.1.0",
+    "url": "https://raw.githubusercontent.com/BurntSushi/ripgrep/15.1.0/UNLICENSE",
+    "upstreamRef": "15.1.0",
+    "path": "codex-tools/ripgrep/UNLICENSE",
+    "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c",
+    "bytes": 1211
+  },
+  {
+    "component": "MIT standardized terms",
+    "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/MIT.txt",
+    "upstreamRef": "main",
+    "path": "codex-tools/MIT-standardized-terms/MIT.txt",
+    "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5",
+    "bytes": 1078,
+    "retrievedDate": "2026-10-15",
+    "purpose": "Unmodified standard MIT terms for upstream packages declaring MIT without separate license file; does not invent a copyright year."
+  },
+  {
+    "component": "PCRE2",
+    "version": "10.45",
+    "upstreamRef": "pcre2-10.45",
+    "url": "https://raw.githubusercontent.com/PCRE2Project/pcre2/pcre2-10.45/LICENCE.md",
+    "path": "codex-tools/PCRE2/LICENCE.md",
+    "sha256": "9cf7ac6976099a1d856826d3ef1b093bd6b84489dc6100628ac79e740cf9885a",
+    "bytes": 3867
+  }
+]

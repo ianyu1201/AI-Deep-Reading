@@ -1,0 +1,2027 @@
+{
+  "files": [
+    {
+      "path": "rust-crates/adler2-2.0.1.crate",
+      "bytes": 13366,
+      "sha256": "320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa"
+    },
+    {
+      "path": "rust-crates/aes-0.9.3.crate",
+      "bytes": 112408,
+      "sha256": "35f0f96ce78e38c3dc6d8948aa8163d06385be74000f3c7a95bf1eef35d3ea32"
+    },
+    {
+      "path": "rust-crates/ahash-0.8.12.crate",
+      "bytes": 43413,
+      "sha256": "5a15f179cd60c4584b8a8c596927aadc462e27f2ca70c04e0071964a73ba7a75"
+    },
+    {
+      "path": "rust-crates/aho-corasick-1.1.5.crate",
+      "bytes": 184315,
+      "sha256": "c982642fa9e8606056828ee9a8505737230110bb1099153c79efe865c59d12ba"
+    },
+    {
+      "path": "rust-crates/alloca-0.4.0.crate",
+      "bytes": 4257,
+      "sha256": "e5a7d05ea6aea7e9e64d25b9156ba2fee3fdd659e34e41063cd2fc7cd020d7f4"
+    },
+    {
+      "path": "rust-crates/android_system_properties-0.1.6.crate",
+      "bytes": 5625,
+      "sha256": "ae221649c9976a6f6c56ae1facf410f3ddb33cc661c4b7b61020a912d4237fbc"
+    },
+    {
+      "path": "rust-crates/anes-0.1.6.crate",
+      "bytes": 23857,
+      "sha256": "4b46cbb362ab8752921c97e041f5e366ee6297bd428a31275b9fcf1e380f7299"
+    },
+    {
+      "path": "rust-crates/anstream-1.0.0.crate",
+      "bytes": 28916,
+      "sha256": "824a212faf96e9acacdbd09febd34438f8f711fb84e09a8916013cd7815ca28d"
+    },
+    {
+      "path": "rust-crates/anstyle-1.0.14.crate",
+      "bytes": 17787,
+      "sha256": "940b3a0ca603d1eade50a4846a2afffd5ef57a9feac2c0e2ec2e14f9ead76000"
+    },
+    {
+      "path": "rust-crates/anstyle-parse-1.0.0.crate",
+      "bytes": 22042,
+      "sha256": "52ce7f38b242319f7cabaa6813055467063ecdc9d355bbb4ce0c68908cd8130e"
+    },
+    {
+      "path": "rust-crates/anstyle-query-1.1.5.crate",
+      "bytes": 10264,
+      "sha256": "40c48f72fd53cd289104fc64099abca73db4166ad86ea0b4341abe65af83dadc"
+    },
+    {
+      "path": "rust-crates/anstyle-wincon-3.0.11.crate",
+      "bytes": 12638,
+      "sha256": "291e6a250ff86cd4a820112fb8898808a366d8f9f58ce16d1f538353ad55747d"
+    },
+    {
+      "path": "rust-crates/approx-0.5.1.crate",
+      "bytes": 15100,
+      "sha256": "cab112f0a86d568ea0e627cc1d6be74a1e9cd55214684db5561995f6dad897c6"
+    },
+    {
+      "path": "rust-crates/arbitrary-1.4.2.crate",
+      "bytes": 38307,
+      "sha256": "c3d036a3c4ab069c7b410a2ce876bd74808d2d0888a82667669f8e783a898bf1"
+    },
+    {
+      "path": "rust-crates/assert_cmd-2.2.2.crate",
+      "bytes": 27683,
+      "sha256": "2aa3a22042e45de04255c7bf3626e239f450200fd0493c1e382263544b20aea6"
+    },
+    {
+      "path": "rust-crates/autocfg-1.5.1.crate",
+      "bytes": 18911,
+      "sha256": "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53"
+    },
+    {
+      "path": "rust-crates/av-data-0.4.4.crate",
+      "bytes": 17576,
+      "sha256": "fca67ba5d317924c02180c576157afd54babe48a76ebc66ce6d34bb8ba08308e"
+    },
+    {
+      "path": "rust-crates/bit-set-0.8.0.crate",
+      "bytes": 16289,
+      "sha256": "08807e080ed7f9d5433fa9b275196cfc35414f66a0c79d864dc51a0d825231a3"
+    },
+    {
+      "path": "rust-crates/bit-vec-0.8.0.crate",
+      "bytes": 24132,
+      "sha256": "5e764a1d40d510daf35e07be9eb06e75770908c27d411ee6c92109c9840eaaf7"
+    },
+    {
+      "path": "rust-crates/bitflags-1.3.2.crate",
+      "bytes": 23021,
+      "sha256": "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
+    },
+    {
+      "path": "rust-crates/bitflags-2.13.2.crate",
+      "bytes": 51678,
+      "sha256": "3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06"
+    },
+    {
+      "path": "rust-crates/bitreader-0.3.11.crate",
+      "bytes": 12077,
+      "sha256": "886559b1e163d56c765bc3a985febb4eee8009f625244511d8ee3c432e08c066"
+    },
+    {
+      "path": "rust-crates/block-0.1.6.crate",
+      "bytes": 4077,
+      "sha256": "0d8c1fef690941d3e7788d328517591fecc684c084084702d6ff1641e993699a"
+    },
+    {
+      "path": "rust-crates/block-buffer-0.12.1.crate",
+      "bytes": 15902,
+      "sha256": "d2f6c7dbe95a6ed67ad9f18e57daf93a2f034c524b99fd2b76d18fdfeb6660aa"
+    },
+    {
+      "path": "rust-crates/block-padding-0.4.2.crate",
+      "bytes": 9764,
+      "sha256": "710f1dd022ef4e93f8a438b4ba958de7f64308434fa6a87104481645cc30068b"
+    },
+    {
+      "path": "rust-crates/bstr-1.13.1.crate",
+      "bytes": 356631,
+      "sha256": "6bb31b46c14244e20ee9984b11bf5c992b91fb6939fea616e3512c8baecdbe5f"
+    },
+    {
+      "path": "rust-crates/bumpalo-3.20.3.crate",
+      "bytes": 98671,
+      "sha256": "72f5acc6cb2ba439de613abc23857ec3d78374d8ed5ac84e9d11336e87da8649"
+    },
+    {
+      "path": "rust-crates/byte-slice-cast-1.2.3.crate",
+      "bytes": 7498,
+      "sha256": "7575182f7272186991736b70173b0ea045398f984bf5ebbb3804736ce1330c9d"
+    },
+    {
+      "path": "rust-crates/bytemuck-1.25.2.crate",
+      "bytes": 54075,
+      "sha256": "95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797"
+    },
+    {
+      "path": "rust-crates/byteorder-1.5.0.crate",
+      "bytes": 23288,
+      "sha256": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b"
+    },
+    {
+      "path": "rust-crates/byteorder-lite-0.1.0.crate",
+      "bytes": 15909,
+      "sha256": "8f1fe948ff07f4bd06c30984e69f5b4899c516a3ef74f34df92a2df2ab535495"
+    },
+    {
+      "path": "rust-crates/bytes-1.12.1.crate",
+      "bytes": 75667,
+      "sha256": "fc652a48c352aef3ea3aed32080501cf3ef6ed5da78602a020c991775b0aff04"
+    },
+    {
+      "path": "rust-crates/cairo-rs-0.22.9.crate",
+      "bytes": 57302,
+      "sha256": "df683f1d30b457964673a5541a4603208ef95ab6873d2a55871895cf310f3b56"
+    },
+    {
+      "path": "rust-crates/cairo-sys-rs-0.22.9.crate",
+      "bytes": 14533,
+      "sha256": "ee548131103ad8f698c6725669647b9c757b3b66992dd6a026037596417bee21"
+    },
+    {
+      "path": "rust-crates/cast-0.3.0.crate",
+      "bytes": 11452,
+      "sha256": "37b2a672a2cb129a2e41c10b1224bb368f9f37a2b16b612598138befd7b37eb5"
+    },
+    {
+      "path": "rust-crates/cbc-0.2.1.crate",
+      "bytes": 25642,
+      "sha256": "ce2dc9ee5f88d11e0beb842c88b33c8a5cf0d1329c4b19494af42b07dbfe8896"
+    },
+    {
+      "path": "rust-crates/cc-1.4.7.crate",
+      "bytes": 102157,
+      "sha256": "54413ede23c2daf518f35156dfde027feb2374004d63bd497f983c8db9c0e313"
+    },
+    {
+      "path": "rust-crates/cfg-expr-0.20.9.crate",
+      "bytes": 45746,
+      "sha256": "fe4ece8474b5f766c63426647e7b4b316b67431ade1036a8313cee24a03ae917"
+    },
+    {
+      "path": "rust-crates/cfg-if-1.0.5.crate",
+      "bytes": 9578,
+      "sha256": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600"
+    },
+    {
+      "path": "rust-crates/chacha20-0.10.2.crate",
+      "bytes": 38197,
+      "sha256": "65c35e4b699c7e15ccbe7ee35c005e4fc0a278d22238a2857e6ce2dadeda1b06"
+    },
+    {
+      "path": "rust-crates/chrono-0.4.45.crate",
+      "bytes": 240866,
+      "sha256": "1aa79e62e7697b8e29b513a68abacf485adcd1fe8284a4316c5ae868e6633327"
+    },
+    {
+      "path": "rust-crates/ciborium-0.2.2.crate",
+      "bytes": 35611,
+      "sha256": "42e69ffd6f0917f5c029256a24d0161db17cea3997d185db0d35926308770f0e"
+    },
+    {
+      "path": "rust-crates/ciborium-io-0.2.2.crate",
+      "bytes": 6697,
+      "sha256": "05afea1e0a06c9be33d539b876f1ce3692f4afea2cb41f740e7743225ed1c757"
+    },
+    {
+      "path": "rust-crates/ciborium-ll-0.2.2.crate",
+      "bytes": 14695,
+      "sha256": "57663b653d948a338bfb3eeba9bb2fd5fcfaecb9e199e87e1eda4d9e8b240fd9"
+    },
+    {
+      "path": "rust-crates/cipher-0.5.2.crate",
+      "bytes": 28177,
+      "sha256": "e8cf2a2c93cd704877c0858356ed03480ff301ee950b43f1cbe4573b088bfa6c"
+    },
+    {
+      "path": "rust-crates/clap-4.6.7.crate",
+      "bytes": 65831,
+      "sha256": "aa8876b300ab35ba921adea3dfd70157a46249b33f95c9084ae5709785478946"
+    },
+    {
+      "path": "rust-crates/clap_builder-4.6.7.crate",
+      "bytes": 171709,
+      "sha256": "ec0797fb7aeb1406c84efac526901f7ec3ead2124f946b494e72879d4b54704d"
+    },
+    {
+      "path": "rust-crates/clap_complete-4.6.11.crate",
+      "bytes": 52569,
+      "sha256": "037e2a1a92236d0aff7e845093f64661d6df4c02c9fcc61a60e9e1d736fa392f"
+    },
+    {
+      "path": "rust-crates/clap_derive-4.6.7.crate",
+      "bytes": 33942,
+      "sha256": "f9c751b79415d4e559e3d1fcf128e09e720eb673a06d26cf6f392d37d75b66e0"
+    },
+    {
+      "path": "rust-crates/clap_lex-1.1.1.crate",
+      "bytes": 13572,
+      "sha256": "1c133bc6a41be0d194c306b5506d15e6feeea7b1d6604bd3f8310dfb2ca96486"
+    },
+    {
+      "path": "rust-crates/color_quant-1.1.0.crate",
+      "bytes": 6649,
+      "sha256": "3d7b894f5411737b7867f4827955924d7c254fc9f4d91a6aad6b097804b1018b"
+    },
+    {
+      "path": "rust-crates/colorchoice-1.0.5.crate",
+      "bytes": 8187,
+      "sha256": "1d07550c9036bf2ae0c684c4297d503f838287c83c53686d05370d0e139ae570"
+    },
+    {
+      "path": "rust-crates/const-oid-0.10.2.crate",
+      "bytes": 61449,
+      "sha256": "a6ef517f0926dd24a1582492c791b6a4818a4d94e789a334894aa15b0d12f55c"
+    },
+    {
+      "path": "rust-crates/core-foundation-sys-0.8.7.crate",
+      "bytes": 37712,
+      "sha256": "773648b94d0e5d620f64f280777445740e61fe701025087ec8b57f45c791888b"
+    },
+    {
+      "path": "rust-crates/core_detect-1.0.0.crate",
+      "bytes": 17758,
+      "sha256": "7f8f80099a98041a3d1622845c271458a2d73e688351bf3cb999266764b81d48"
+    },
+    {
+      "path": "rust-crates/cpubits-0.1.1.crate",
+      "bytes": 10261,
+      "sha256": "15b85f9c39137c3a891689859392b1bd49812121d0d61c9caf00d46ed5ce06ae"
+    },
+    {
+      "path": "rust-crates/cpufeatures-0.3.1.crate",
+      "bytes": 14272,
+      "sha256": "5ca28b0ae3115b884660db4118d803791fd6756b6e88f39c0f3f7859060d7566"
+    },
+    {
+      "path": "rust-crates/crc32fast-1.5.2.crate",
+      "bytes": 48100,
+      "sha256": "01a7799fd6b852db0e61728dde9a204c423b44d689dbd432522543614b490e78"
+    },
+    {
+      "path": "rust-crates/criterion-0.8.2.crate",
+      "bytes": 122924,
+      "sha256": "950046b2aa2492f9a536f5f4f9a3de7b9e2476e575e05bd6c333371add4d98f3"
+    },
+    {
+      "path": "rust-crates/criterion-plot-0.8.2.crate",
+      "bytes": 24800,
+      "sha256": "d8d80a2f4f5b554395e47b5d8305bc3d27813bacb73493eb1001e8f76dae29ea"
+    },
+    {
+      "path": "rust-crates/crossbeam-deque-0.8.8.crate",
+      "bytes": 24634,
+      "sha256": "622f3fc73690be383c7214310406f28a90e6edeadc3cea882f9d71e495b9711a"
+    },
+    {
+      "path": "rust-crates/crossbeam-epoch-0.9.21.crate",
+      "bytes": 47936,
+      "sha256": "dc74980687109a3b14c72fd458107bf0baa1da1a1a805e178d15501ba9b86d9d"
+    },
+    {
+      "path": "rust-crates/crossbeam-utils-0.8.23.crate",
+      "bytes": 47174,
+      "sha256": "a31eee39dddec8330830986fcd7625edb5a24ec90ea038215273bbc3adb08ac6"
+    },
+    {
+      "path": "rust-crates/crunchy-0.2.4.crate",
+      "bytes": 3887,
+      "sha256": "460fbee9c2c2f33933d720630a6a0bac33ba7053db5344fac858d4b8952d77d5"
+    },
+    {
+      "path": "rust-crates/crypto-common-0.2.2.crate",
+      "bytes": 15449,
+      "sha256": "ce6e4c961d6cd6c9a86db418387425e8bdeaf05b3c8bc1411e6dca4c252f1453"
+    },
+    {
+      "path": "rust-crates/cssparser-0.37.0.crate",
+      "bytes": 56860,
+      "sha256": "8c9cdaae01d5ed7882b04d795e7f752f46ff52d2fa3b50a20d28c464510bba98"
+    },
+    {
+      "path": "rust-crates/cssparser-color-0.5.0.crate",
+      "bytes": 17846,
+      "sha256": "bbaa233e1dcd9c13a5d3e3a8a2c0f5a727bac380398345dbcb31db4597edc86b"
+    },
+    {
+      "path": "rust-crates/cssparser-macros-0.7.1.crate",
+      "bytes": 8197,
+      "sha256": "d045de693cb712d0b22c6a64be5b953f67b3ce00ab5ad3dd5d8b441886ab8e1a"
+    },
+    {
+      "path": "rust-crates/data-url-0.3.2.crate",
+      "bytes": 23862,
+      "sha256": "be1e0bca6c3637f992fc1cc7cbc52a78c1ef6db076dbf1059c4323d6a2048376"
+    },
+    {
+      "path": "rust-crates/dav1d-0.11.1.crate",
+      "bytes": 16984,
+      "sha256": "3ee89cb860616069c67520dcd66cacdb900b57c799f634a0eb6d91f6e2a82b61"
+    },
+    {
+      "path": "rust-crates/dav1d-sys-0.8.3.crate",
+      "bytes": 9530,
+      "sha256": "c3c91aea6668645415331133ed6f8ddf0e7f40160cd97a12d59e68716a58704b"
+    },
+    {
+      "path": "rust-crates/defmt-1.1.1.crate",
+      "bytes": 34207,
+      "sha256": "e2953bfe4f93bbd20cc71198842756f77d161884c99ebbabc41d80231ded88d1"
+    },
+    {
+      "path": "rust-crates/defmt-macros-1.1.1.crate",
+      "bytes": 27937,
+      "sha256": "bad9c72e7ca2137e0dc3813245a0d282fd6daad32fd800af018306a9169b5fe8"
+    },
+    {
+      "path": "rust-crates/defmt-parser-1.0.0.crate",
+      "bytes": 10881,
+      "sha256": "10d60334b3b2e7c9d91ef8150abfb6fa4c1c39ebbcf4a81c2e346aad939fee3e"
+    },
+    {
+      "path": "rust-crates/deranged-0.5.8.crate",
+      "bytes": 26885,
+      "sha256": "7cd812cc2bc1d69d4764bd80df88b4317eaef9e773c75226407d9bc0876b211c"
+    },
+    {
+      "path": "rust-crates/derive_more-2.1.1.crate",
+      "bytes": 88632,
+      "sha256": "d751e9e49156b02b44f9c1815bcb94b984cdcc4396ecc32521c739452808b134"
+    },
+    {
+      "path": "rust-crates/derive_more-impl-2.1.1.crate",
+      "bytes": 99094,
+      "sha256": "799a97264921d8623a957f6c3b9011f3b5492f557bbb7a5a19b7fa6d06ba8dcb"
+    },
+    {
+      "path": "rust-crates/diff-0.1.13.crate",
+      "bytes": 46216,
+      "sha256": "56254986775e3233ffa9c4d7d3faaf6d36a2c09d30b20687e9f88bc8bafc16c8"
+    },
+    {
+      "path": "rust-crates/difflib-0.4.0.crate",
+      "bytes": 7638,
+      "sha256": "6184e33543162437515c2e2b48714794e37845ec9851711914eec9d308f6ebe8"
+    },
+    {
+      "path": "rust-crates/digest-0.11.3.crate",
+      "bytes": 28955,
+      "sha256": "f1dd6dbb5841937940781866fa1281a1ff7bd3bf827091440879f9994983d5c2"
+    },
+    {
+      "path": "rust-crates/displaydoc-0.2.7.crate",
+      "bytes": 21343,
+      "sha256": "c6232dd377dcc64799954cbd3a9bb882e9cdc1308ccd87b1c098f1fb2eaf82a8"
+    },
+    {
+      "path": "rust-crates/dlib-0.5.3.crate",
+      "bytes": 7120,
+      "sha256": "ab8ecd87370524b461f8557c119c405552c396ed91fc0a8eec68679eab26f94a"
+    },
+    {
+      "path": "rust-crates/dtoa-1.0.11.crate",
+      "bytes": 21122,
+      "sha256": "4c3cf4824e2d5f025c7b531afcb2325364084a16806f6d47fbc1f5fbd9960590"
+    },
+    {
+      "path": "rust-crates/dtoa-short-0.3.5.crate",
+      "bytes": 8287,
+      "sha256": "cd1511a7b6a56299bd043a9c167a6d2bfb37bf84a6dfceaba651168adfb43c87"
+    },
+    {
+      "path": "rust-crates/ecb-0.2.1.crate",
+      "bytes": 24661,
+      "sha256": "26f2a8b3e564eba0877223dc343703ad0385794e882e6d13f3a4dd5c6b1f41ac"
+    },
+    {
+      "path": "rust-crates/either-1.18.0.crate",
+      "bytes": 22357,
+      "sha256": "252afb9ae5eaa683babdc6a068b3f5726eb19e05070c731f9b2a23a7c3e8ed34"
+    },
+    {
+      "path": "rust-crates/encoding_rs-0.8.41.crate",
+      "bytes": 552175,
+      "sha256": "7b5ef0006ac9ab233c38522f5ae99cae3625151de8f706cacee1cba4b8e2832a"
+    },
+    {
+      "path": "rust-crates/equivalent-1.0.2.crate",
+      "bytes": 7419,
+      "sha256": "877a4ace8713b0bcf2a4e7eec82529c029f1d0619886d18145fea96c3ffe5c0f"
+    },
+    {
+      "path": "rust-crates/errno-0.3.14.crate",
+      "bytes": 12002,
+      "sha256": "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
+    },
+    {
+      "path": "rust-crates/fallible_collections-0.4.9.crate",
+      "bytes": 49824,
+      "sha256": "a88c69768c0a15262df21899142bc6df9b9b823546d4b4b9a7bc2d6c448ec6fd"
+    },
+    {
+      "path": "rust-crates/fastrand-2.5.0.crate",
+      "bytes": 20782,
+      "sha256": "da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223"
+    },
+    {
+      "path": "rust-crates/fdeflate-0.3.7.crate",
+      "bytes": 27188,
+      "sha256": "1e6853b52649d4ac5c0bd02320cddc5ba956bdb407c4b75a2c6b75bf51500f8c"
+    },
+    {
+      "path": "rust-crates/find-msvc-tools-0.1.13.crate",
+      "bytes": 31368,
+      "sha256": "ef25905e51abafe4dcea6c15fec58c57b601cdbd0ee53d22ea1d3016c587d39b"
+    },
+    {
+      "path": "rust-crates/flate2-1.1.10.crate",
+      "bytes": 80244,
+      "sha256": "6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb"
+    },
+    {
+      "path": "rust-crates/float-cmp-0.10.0.crate",
+      "bytes": 10702,
+      "sha256": "b09cf3155332e944990140d967ff5eceb70df778b34f77d8075db46e4704e6d8"
+    },
+    {
+      "path": "rust-crates/fnv-1.0.7.crate",
+      "bytes": 11266,
+      "sha256": "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
+    },
+    {
+      "path": "rust-crates/form_urlencoded-1.2.2.crate",
+      "bytes": 9347,
+      "sha256": "cb4cb245038516f5f85277875cdaa4f7d2c9a0fa0468de06ed190163b1581fcf"
+    },
+    {
+      "path": "rust-crates/futures-channel-0.3.34.crate",
+      "bytes": 33165,
+      "sha256": "b1f9e3d69d39e4862ffed03ed071a76f9a13ba1d9109d355b0f0aa6b15e393c4"
+    },
+    {
+      "path": "rust-crates/futures-core-0.3.34.crate",
+      "bytes": 14692,
+      "sha256": "92d699e522242e69e3003b94ecc1f960f3a5e015aa7c5d7486e65ad01dd94f5e"
+    },
+    {
+      "path": "rust-crates/futures-executor-0.3.34.crate",
+      "bytes": 18560,
+      "sha256": "031b47cf1a3c6cc8bc2fc76cd437f521619387907d469316e7c0bc278f1f5432"
+    },
+    {
+      "path": "rust-crates/futures-io-0.3.34.crate",
+      "bytes": 9189,
+      "sha256": "53c0fa8157de1303bfffdaa1cc2a673bfffb60102f76b0ef4441659124373fed"
+    },
+    {
+      "path": "rust-crates/futures-macro-0.3.34.crate",
+      "bytes": 11926,
+      "sha256": "9fb9654ba8355388abeb8dcb4fc62f511300867002afc858860463bdd9fe0c44"
+    },
+    {
+      "path": "rust-crates/futures-task-0.3.34.crate",
+      "bytes": 11376,
+      "sha256": "cd417de3d1d015fc3bfd2b1ea46dfc7bab72ef86f1cc7cc9c78e728b34a6d1fd"
+    },
+    {
+      "path": "rust-crates/futures-util-0.3.34.crate",
+      "bytes": 169782,
+      "sha256": "0d50a92467f8ba5dd6e3ee5d4bd04d73ab2e4e1c44474a0674821dfce14b79bc"
+    },
+    {
+      "path": "rust-crates/gdk-pixbuf-0.22.0.crate",
+      "bytes": 21521,
+      "sha256": "25f420376dbee041b2db374ce4573892a36222bb3f6c0c43e24f0d67eae9b646"
+    },
+    {
+      "path": "rust-crates/gdk-pixbuf-sys-0.22.9.crate",
+      "bytes": 13298,
+      "sha256": "9d5209294ba3775f9b650bf78bfadeba4332089f2329b3e2f6ce0a4957a45bff"
+    },
+    {
+      "path": "rust-crates/getrandom-0.3.4.crate",
+      "bytes": 50932,
+      "sha256": "899def5c37c4fd7b2664648c28120ecec138e4d395b459e5ca34f9cce2dd77fd"
+    },
+    {
+      "path": "rust-crates/getrandom-0.4.3.crate",
+      "bytes": 52437,
+      "sha256": "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099"
+    },
+    {
+      "path": "rust-crates/gif-0.14.2.crate",
+      "bytes": 38710,
+      "sha256": "ee8cfcc411d9adbbaba82fb72661cc1bcca13e8bba98b364e62b2dba8f960159"
+    },
+    {
+      "path": "rust-crates/gio-0.22.9.crate",
+      "bytes": 251368,
+      "sha256": "b399f4650bb52c051f3fdf49a234e8a27ab5725c8cd774556c55eee64b2c0350"
+    },
+    {
+      "path": "rust-crates/gio-sys-0.22.9.crate",
+      "bytes": 83608,
+      "sha256": "6c28739f914c15b87a9856000bed9cbd5b3a8afbca5e982d9a299e1601422cb5"
+    },
+    {
+      "path": "rust-crates/gio-unix-0.22.8.crate",
+      "bytes": 14403,
+      "sha256": "ce8d768735e229742c135afa3d3326604088d2df0679901cdb05e791fe2fbe0a"
+    },
+    {
+      "path": "rust-crates/gio-unix-sys-0.22.9.crate",
+      "bytes": 11865,
+      "sha256": "7c01dbb58f92f67548d85e2209e073acc7ee04e107c7e04ee69b49e38b4933b4"
+    },
+    {
+      "path": "rust-crates/gio-win32-0.22.8.crate",
+      "bytes": 8714,
+      "sha256": "9daa423bc3dc24305275d0551882c4c0469c1cf842ab14897cf5ffbb63d95cd4"
+    },
+    {
+      "path": "rust-crates/gio-win32-sys-0.22.9.crate",
+      "bytes": 9711,
+      "sha256": "81b96f21f242e3ee9076561f3ff04e8ac1fed20a56da23acfa69890c9d922170"
+    },
+    {
+      "path": "rust-crates/glam-0.30.10.crate",
+      "bytes": 773605,
+      "sha256": "19fc433e8437a212d1b6f1e68c7824af3aed907da60afa994e7f542d18d12aa9"
+    },
+    {
+      "path": "rust-crates/glam-0.31.1.crate",
+      "bytes": 829131,
+      "sha256": "556f6b2ea90b8d15a74e0e7bb41671c9bdf38cd9f78c284d750b9ce58a2b5be7"
+    },
+    {
+      "path": "rust-crates/glam-0.32.1.crate",
+      "bytes": 830817,
+      "sha256": "f70749695b063ecbf6b62949ccccde2e733ec3ecbbd71d467dca4e5c6c97cca0"
+    },
+    {
+      "path": "rust-crates/glam-0.33.7.crate",
+      "bytes": 874806,
+      "sha256": "e762b9b188634fc508d4ec54b62ea3d352c43fd431d18d05d46f559f217f4725"
+    },
+    {
+      "path": "rust-crates/glib-0.22.9.crate",
+      "bytes": 303221,
+      "sha256": "18b9b8d350db41f690ec1b87109f202782748bbd8ab2f2ede17cb40d29e2838c"
+    },
+    {
+      "path": "rust-crates/glib-macros-0.22.9.crate",
+      "bytes": 71824,
+      "sha256": "c9597c68fa7bdf4154a3079642cd21c4dccac0b0bdd2897d82861523bf91e7b9"
+    },
+    {
+      "path": "rust-crates/glib-sys-0.22.9.crate",
+      "bytes": 66967,
+      "sha256": "99b38907e67e40dec9b60f858bcada952598719cb512a13eb13d6cdcd16f8295"
+    },
+    {
+      "path": "rust-crates/gobject-sys-0.22.9.crate",
+      "bytes": 22055,
+      "sha256": "07595c9ba696bd9819cb6a8df39f08078f3dd679508fe052dd558492c2053834"
+    },
+    {
+      "path": "rust-crates/half-2.7.1.crate",
+      "bytes": 61040,
+      "sha256": "6ea2d84b969582b4b1864a92dc5d27cd2b77b622a8d79306834f1be5ba20d84b"
+    },
+    {
+      "path": "rust-crates/hashbrown-0.13.2.crate",
+      "bytes": 105265,
+      "sha256": "43a3c133739dddd0d2990f9a4bdf8eb4b21ef50e4851ca85ab661199821d510e"
+    },
+    {
+      "path": "rust-crates/hashbrown-0.17.1.crate",
+      "bytes": 155512,
+      "sha256": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a"
+    },
+    {
+      "path": "rust-crates/heck-0.5.0.crate",
+      "bytes": 11517,
+      "sha256": "2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea"
+    },
+    {
+      "path": "rust-crates/hybrid-array-0.4.15.crate",
+      "bytes": 36801,
+      "sha256": "27f864f10dfb56725ce5ce5472bc52252c8f93a4ab86327122cebf62c5f59a17"
+    },
+    {
+      "path": "rust-crates/iana-time-zone-0.1.65.crate",
+      "bytes": 34079,
+      "sha256": "e31bc9ad994ba00e440a8aa5c9ef0ec67d5cb5e5cb0cc7f8b744a35b389cc470"
+    },
+    {
+      "path": "rust-crates/iana-time-zone-haiku-0.1.2.crate",
+      "bytes": 7185,
+      "sha256": "f31827a206f56af32e590ba56d5d2d085f558508192593743f16b2306495269f"
+    },
+    {
+      "path": "rust-crates/icu_collections-2.3.0.crate",
+      "bytes": 87970,
+      "sha256": "fa68d21081c4a05d5a901a1c62add574c77048b6a1c67be3b50ce0b60d4ca513"
+    },
+    {
+      "path": "rust-crates/icu_locale_core-2.3.0.crate",
+      "bytes": 80250,
+      "sha256": "d56e28588da92eee5c3201a6eff33fabdd49b62269c8938d4ff050ce4d900deb"
+    },
+    {
+      "path": "rust-crates/icu_normalizer-2.3.0.crate",
+      "bytes": 530595,
+      "sha256": "12f9cf5f235641ed274641dd81c3f28d870e276763d0797aeeab72317b1c646f"
+    },
+    {
+      "path": "rust-crates/icu_normalizer_data-2.3.0.crate",
+      "bytes": 67215,
+      "sha256": "1563da1ed3e0b3bf3d74c9b85917ac9c56464d2f57242270c09c9e752f8021a0"
+    },
+    {
+      "path": "rust-crates/icu_properties-2.3.0.crate",
+      "bytes": 102637,
+      "sha256": "7e7ca276ad3145661a65914e6daf131ca5120cd3dcee8f8f3214b8875184a148"
+    },
+    {
+      "path": "rust-crates/icu_properties_data-2.3.0.crate",
+      "bytes": 169152,
+      "sha256": "e590f038c1464a96894fd6d10127e90a8be4509f56ff7ecef851b15cee0b7caa"
+    },
+    {
+      "path": "rust-crates/icu_provider-2.3.1.crate",
+      "bytes": 52447,
+      "sha256": "d27bbb9d3abbefac45d55f647c9de1d44aafcd1186eb91879afef17c396c3e73"
+    },
+    {
+      "path": "rust-crates/idna-1.1.0.crate",
+      "bytes": 148747,
+      "sha256": "3b0875f23caa03898994f6ddc501886a45c7d3d62d04d2d90788d47be1b1e4de"
+    },
+    {
+      "path": "rust-crates/idna_adapter-1.2.2.crate",
+      "bytes": 10444,
+      "sha256": "cb68373c0d6620ef8105e855e7745e18b0d00d3bdb07fb532e434244cdb9a714"
+    },
+    {
+      "path": "rust-crates/image-0.25.10.crate",
+      "bytes": 303647,
+      "sha256": "85ab80394333c02fe689eaf900ab500fbd0c2213da414687ebf995a65d5a6104"
+    },
+    {
+      "path": "rust-crates/image-webp-0.2.4.crate",
+      "bytes": 68478,
+      "sha256": "525e9ff3e1a4be2fbea1fdf0e98686a6d98b4d8f937e1bf7402245af1909e8c3"
+    },
+    {
+      "path": "rust-crates/indexmap-2.14.2.crate",
+      "bytes": 103014,
+      "sha256": "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855"
+    },
+    {
+      "path": "rust-crates/inout-0.2.2.crate",
+      "bytes": 12547,
+      "sha256": "4250ce6452e92010fdf7268ccc5d14faa80bb12fc741938534c58f16804e03c7"
+    },
+    {
+      "path": "rust-crates/is_terminal_polyfill-1.70.2.crate",
+      "bytes": 7548,
+      "sha256": "a6cb138bb79a146c1bd460005623e142ef0181e3d0219cb493e02f7d08a35695"
+    },
+    {
+      "path": "rust-crates/itertools-0.13.0.crate",
+      "bytes": 146261,
+      "sha256": "413ee7dfc52ee1a4949ceeb7dbc8a33f2d6c088194d9f922fb8318faf1f01186"
+    },
+    {
+      "path": "rust-crates/itertools-0.15.0.crate",
+      "bytes": 164131,
+      "sha256": "8b4baf93f58d4425749ca49a51c50ebab072c5df6994d08fed93541c331481dc"
+    },
+    {
+      "path": "rust-crates/itoa-1.0.18.crate",
+      "bytes": 15935,
+      "sha256": "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
+    },
+    {
+      "path": "rust-crates/jiff-0.2.37.crate",
+      "bytes": 674376,
+      "sha256": "0ab1baf72f08796de0260609515130699b890ac25f30e610ad894bc5856cafdb"
+    },
+    {
+      "path": "rust-crates/jiff-core-0.1.1.crate",
+      "bytes": 129192,
+      "sha256": "5e52fe76043ccecc9005d2305ebaadf7d7fc0cc89ca6baa10a94d6bc68c7128c"
+    },
+    {
+      "path": "rust-crates/jiff-static-0.2.37.crate",
+      "bytes": 8063,
+      "sha256": "378268a1116ad67ae6228701118ac9f491d78fda38a40a1f1a9e1348de6f7212"
+    },
+    {
+      "path": "rust-crates/jiff-tzdb-0.1.8.crate",
+      "bytes": 62066,
+      "sha256": "142bd39932ad231f10513df9ab62661fead8719872150b7ad02a2df79f4e141e"
+    },
+    {
+      "path": "rust-crates/jiff-tzdb-platform-0.1.3.crate",
+      "bytes": 3179,
+      "sha256": "875a5a69ac2bab1a891711cf5eccbec1ce0341ea805560dcd90b7a2e925132e8"
+    },
+    {
+      "path": "rust-crates/jobserver-0.1.35.crate",
+      "bytes": 28890,
+      "sha256": "1c00acbd29eabad4a2392fa0e921c874934dbbf4194312ad20f04a0ed67a3cb3"
+    },
+    {
+      "path": "rust-crates/js-sys-0.3.105.crate",
+      "bytes": 113002,
+      "sha256": "ce57d20d1ea864ce2ac172ab472d409214f4fd359f0b2a2775abdf522e2af99e"
+    },
+    {
+      "path": "rust-crates/language-tags-0.3.2.crate",
+      "bytes": 53420,
+      "sha256": "d4345964bb142484797b161f473a503a434de77149dd8c7427788c6e13379388"
+    },
+    {
+      "path": "rust-crates/lazy_static-1.5.0.crate",
+      "bytes": 14025,
+      "sha256": "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
+    },
+    {
+      "path": "rust-crates/libc-0.2.189.crate",
+      "bytes": 851502,
+      "sha256": "3eaf3ede3fee6db1a4c2ee091bf8a8b4dccdc6d17f656fb07896ee72867612f2"
+    },
+    {
+      "path": "rust-crates/libfuzzer-sys-0.4.13.crate",
+      "bytes": 129891,
+      "sha256": "a9fd2f41a1cba099f79a0b6b6c35656cf7c03351a7bae8ff0f28f25270f929d2"
+    },
+    {
+      "path": "rust-crates/libloading-0.8.9.crate",
+      "bytes": 30222,
+      "sha256": "d7c4b02199fee7c5d21a5ae7d8cfa79a6ef5bb2fc834d6e9058e89c825efdc55"
+    },
+    {
+      "path": "rust-crates/linux-raw-sys-0.12.1.crate",
+      "bytes": 3006116,
+      "sha256": "32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53"
+    },
+    {
+      "path": "rust-crates/litemap-0.8.3.crate",
+      "bytes": 35045,
+      "sha256": "47d9d19d1d6efa0109d2f65ff4c85cddd50bd572e5a00127ab10987290bcefae"
+    },
+    {
+      "path": "rust-crates/locale_config-0.3.0.crate",
+      "bytes": 20808,
+      "sha256": "08d2c35b16f4483f6c26f0e4e9550717a2f6575bcd6f12a53ff0c490a94a6934"
+    },
+    {
+      "path": "rust-crates/lock_api-0.4.14.crate",
+      "bytes": 29249,
+      "sha256": "224399e74b87b5f3557511d98dff8b14089b3dadafcab6bb93eab67d3aace965"
+    },
+    {
+      "path": "rust-crates/log-0.4.34.crate",
+      "bytes": 53395,
+      "sha256": "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
+    },
+    {
+      "path": "rust-crates/lopdf-0.44.0.crate",
+      "bytes": 245024,
+      "sha256": "5e2ec995d822e05cabc3f06d196ee43650af3fe4fe38012cacb35e0c3d113b68"
+    },
+    {
+      "path": "rust-crates/malloc_buf-0.0.6.crate",
+      "bytes": 1239,
+      "sha256": "62bb907fe88d54d8d9ce32a3cceab4218ed2f6b7d35617cafe9adf84e43919cb"
+    },
+    {
+      "path": "rust-crates/markup5ever-0.39.0.crate",
+      "bytes": 19264,
+      "sha256": "7122d987ec5f704ee56f6e5b41a7d93722e9aae27ae07cafa4036c4d3f9757de"
+    },
+    {
+      "path": "rust-crates/matches-0.1.10.crate",
+      "bytes": 2592,
+      "sha256": "2532096657941c2fea9c289d370a250971c689d4f143798ff67113ec042024a5"
+    },
+    {
+      "path": "rust-crates/matrixmultiply-0.3.11.crate",
+      "bytes": 51167,
+      "sha256": "3f607c237553f086e7043417a51df26b2eb899d3caff94e6a67592ff992fedc7"
+    },
+    {
+      "path": "rust-crates/md-5-0.11.0.crate",
+      "bytes": 17404,
+      "sha256": "69b6441f590336821bb897fb28fc622898ccceb1d6cea3fde5ea86b090c4de98"
+    },
+    {
+      "path": "rust-crates/memchr-2.8.3.crate",
+      "bytes": 99165,
+      "sha256": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+    },
+    {
+      "path": "rust-crates/miniz_oxide-0.8.9.crate",
+      "bytes": 67132,
+      "sha256": "1fa76a2c86f704bdb222d66965fb3d63269ce38518b83cb0575fca855ebb6316"
+    },
+    {
+      "path": "rust-crates/miniz_oxide-0.9.1.crate",
+      "bytes": 70519,
+      "sha256": "b63fbc4a50860e98e7b2aa7804ded1db5cbc3aff9193adaff57a6931bf7c4b4c"
+    },
+    {
+      "path": "rust-crates/moxcms-0.8.1.crate",
+      "bytes": 188252,
+      "sha256": "bb85c154ba489f01b25c0d36ae69a87e4a1c73a72631fc6c0eb6dde34a73e44b"
+    },
+    {
+      "path": "rust-crates/mp4parse-0.17.0.crate",
+      "bytes": 82408,
+      "sha256": "63a35203d3c6ce92d5251c77520acb2e57108c88728695aa883f70023624c570"
+    },
+    {
+      "path": "rust-crates/multiversion-0.9.0.crate",
+      "bytes": 18538,
+      "sha256": "b4ca4bea16ffc3f443cf7d866912118196bfef4c6a1556ca00f9f9b00bb43f7c"
+    },
+    {
+      "path": "rust-crates/multiversion-macros-0.9.0.crate",
+      "bytes": 15865,
+      "sha256": "0d416831a7317ef4b08bee00b69cbbb9c8763da7959a7026244d6266869f9c83"
+    },
+    {
+      "path": "rust-crates/multiversion_no_op-1.0.0.crate",
+      "bytes": 6077,
+      "sha256": "743fb55ba31b18fb1ecef6bdc9aa2743314978ac084044301a7eee33fb99a20d"
+    },
+    {
+      "path": "rust-crates/mutants-0.0.4.crate",
+      "bytes": 1641,
+      "sha256": "add0ac067452ff1aca8c5002111bd6b1c895baee6e45fcbc44e0193aea17be56"
+    },
+    {
+      "path": "rust-crates/nalgebra-0.35.0.crate",
+      "bytes": 396463,
+      "sha256": "adc43a60c217b0c6ff46e47f26911015ad8d2e5a8be1af668c67e370d99a4346"
+    },
+    {
+      "path": "rust-crates/nalgebra-macros-0.3.0.crate",
+      "bytes": 13091,
+      "sha256": "973e7178a678cfd059ccec50887658d482ce16b0aa9da3888ddeab5cd5eb4889"
+    },
+    {
+      "path": "rust-crates/new_debug_unreachable-1.0.6.crate",
+      "bytes": 2582,
+      "sha256": "650eef8c711430f1a879fdd01d4745a7deea475becfb90269c06775983bbf086"
+    },
+    {
+      "path": "rust-crates/nom-8.0.0.crate",
+      "bytes": 135590,
+      "sha256": "df9761775871bdef83bee530e60050f7e54b1105350d6884eb0fb4f46c2f9405"
+    },
+    {
+      "path": "rust-crates/normalize-line-endings-0.3.0.crate",
+      "bytes": 5737,
+      "sha256": "61807f77802ff30975e01f4f071c8ba10c022052f98b3294119f3e615d13e5be"
+    },
+    {
+      "path": "rust-crates/num-bigint-0.4.8.crate",
+      "bytes": 109961,
+      "sha256": "c89e69e7e0f03bea5ef08013795c25018e101932225a656383bd384495ecc367"
+    },
+    {
+      "path": "rust-crates/num-complex-0.4.6.crate",
+      "bytes": 30352,
+      "sha256": "73f88a1307638156682bada9d7604135552957b7818057dcef22705b4d509495"
+    },
+    {
+      "path": "rust-crates/num-conv-0.2.2.crate",
+      "bytes": 7441,
+      "sha256": "521739c6d2bac4aa25192232afe6841231376b2b26d4d9fae5ecf8ca5772e441"
+    },
+    {
+      "path": "rust-crates/num-derive-0.4.2.crate",
+      "bytes": 14709,
+      "sha256": "ed3955f1a9c7c0c15e092f9c887db08b1fc683305fdf6eb6684f22555355e202"
+    },
+    {
+      "path": "rust-crates/num-integer-0.1.47.crate",
+      "bytes": 23502,
+      "sha256": "7ce2d95d4b3734dc35aa2f45e1aa22cd416814592a4f9d9205e11affd5b8e10b"
+    },
+    {
+      "path": "rust-crates/num-rational-0.4.2.crate",
+      "bytes": 28159,
+      "sha256": "f83d14da390562dca69fc84082e73e548e1ad308d24accdedd2720017cb37824"
+    },
+    {
+      "path": "rust-crates/num-traits-0.2.19.crate",
+      "bytes": 51631,
+      "sha256": "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
+    },
+    {
+      "path": "rust-crates/objc-0.2.7.crate",
+      "bytes": 22036,
+      "sha256": "915b1b472bc21c53464d6c8461c9d3af805ba1ef837e1cac254428f4a77177b1"
+    },
+    {
+      "path": "rust-crates/objc-foundation-0.1.1.crate",
+      "bytes": 9063,
+      "sha256": "1add1b659e36c9607c7aab864a76c7a4c2760cd0cd2e120f3fb8b952c7e22bf9"
+    },
+    {
+      "path": "rust-crates/objc_id-0.1.1.crate",
+      "bytes": 3258,
+      "sha256": "c92d4ddb4bd7b50d730c215ff871754d0da6b2178849f8a2a2ab69712d0c073b"
+    },
+    {
+      "path": "rust-crates/once_cell-1.21.4.crate",
+      "bytes": 35010,
+      "sha256": "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
+    },
+    {
+      "path": "rust-crates/once_cell_polyfill-1.70.2.crate",
+      "bytes": 7448,
+      "sha256": "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
+    },
+    {
+      "path": "rust-crates/oorandom-11.1.5.crate",
+      "bytes": 23750,
+      "sha256": "d6790f58c7ff633d8771f42965289203411a5e5c68388703c06e14f24770b41e"
+    },
+    {
+      "path": "rust-crates/page_size-0.6.0.crate",
+      "bytes": 8479,
+      "sha256": "30d5b2194ed13191c1999ae0704b7839fb18384fa22e49b57eeaa97d79ce40da"
+    },
+    {
+      "path": "rust-crates/pango-0.22.9.crate",
+      "bytes": 50989,
+      "sha256": "0b2022dbbd82e1c42bd950a6f1df9b98c796e725dce5ec275e03cbf9772e4efa"
+    },
+    {
+      "path": "rust-crates/pango-sys-0.22.9.crate",
+      "bytes": 28857,
+      "sha256": "ca02d64761b74d56cdd4b437db6d73dc95e6c0d40f27e1c707952c0f09052948"
+    },
+    {
+      "path": "rust-crates/pangocairo-0.22.9.crate",
+      "bytes": 9427,
+      "sha256": "bd199a0fef965b3ebda91a929a1ab5e7729538882c68e8de38e1904d2e094757"
+    },
+    {
+      "path": "rust-crates/pangocairo-sys-0.22.9.crate",
+      "bytes": 6153,
+      "sha256": "a649a616d67ae68539bc85f00fb45d36fba742ed20fc20e6712a15d8ee52bd3f"
+    },
+    {
+      "path": "rust-crates/parking_lot-0.12.5.crate",
+      "bytes": 46735,
+      "sha256": "93857453250e3077bd71ff98b6a65ea6621a19bb0f559a85248955ac12c45a1a"
+    },
+    {
+      "path": "rust-crates/parking_lot_core-0.9.12.crate",
+      "bytes": 34110,
+      "sha256": "2621685985a2ebf1c516881c026032ac7deafcda1a2c9b7850dc81e3dfcb64c1"
+    },
+    {
+      "path": "rust-crates/percent-encoding-2.3.2.crate",
+      "bytes": 11583,
+      "sha256": "9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220"
+    },
+    {
+      "path": "rust-crates/phf-0.13.1.crate",
+      "bytes": 24786,
+      "sha256": "c1562dc717473dbaa4c1f85a36410e03c047b2e7df7f45ee938fbef64ae7fadf"
+    },
+    {
+      "path": "rust-crates/phf_codegen-0.13.1.crate",
+      "bytes": 14774,
+      "sha256": "49aa7f9d80421bca176ca8dbfebe668cc7a2684708594ec9f3c0db0805d5d6e1"
+    },
+    {
+      "path": "rust-crates/phf_generator-0.13.1.crate",
+      "bytes": 15952,
+      "sha256": "135ace3a761e564ec88c03a77317a7c6b80bb7f7135ef2544dbe054243b89737"
+    },
+    {
+      "path": "rust-crates/phf_macros-0.13.1.crate",
+      "bytes": 21732,
+      "sha256": "812f032b54b1e759ccd5f8b6677695d5268c588701effba24601f6932f8269ef"
+    },
+    {
+      "path": "rust-crates/phf_shared-0.13.1.crate",
+      "bytes": 16141,
+      "sha256": "e57fef6bc5981e38c2ce2d63bfa546861309f875b8a75f092d1d54ae2d64f266"
+    },
+    {
+      "path": "rust-crates/phf_shared-0.14.0.crate",
+      "bytes": 20291,
+      "sha256": "c6fd9027e2d9319be6349febd1db4e8d02aa544921200c9b777720ac34a3aa89"
+    },
+    {
+      "path": "rust-crates/pin-project-lite-0.2.17.crate",
+      "bytes": 31034,
+      "sha256": "a89322df9ebe1c1578d689c92318e070967d1042b512afbe49518723f4e6d5cd"
+    },
+    {
+      "path": "rust-crates/pkg-config-0.3.34.crate",
+      "bytes": 21370,
+      "sha256": "f6b464fbc74e149a392436b17d523f769e057cb6877f6a5c4618bc6f11800548"
+    },
+    {
+      "path": "rust-crates/plotters-0.3.7.crate",
+      "bytes": 149031,
+      "sha256": "5aeb6f403d7a4911efb1e33402027fc44f29b5bf6def3effcc22d7bb75f2b747"
+    },
+    {
+      "path": "rust-crates/plotters-backend-0.3.7.crate",
+      "bytes": 13709,
+      "sha256": "df42e13c12958a16b3f7f4386b9ab1f3e7933914ecea48da7139435263a4172a"
+    },
+    {
+      "path": "rust-crates/plotters-svg-0.3.7.crate",
+      "bytes": 6715,
+      "sha256": "51bae2ac328883f7acdfea3d66a7c35751187f870bc81f94563733a154d7a670"
+    },
+    {
+      "path": "rust-crates/png-0.18.1.crate",
+      "bytes": 125800,
+      "sha256": "60769b8b31b2a9f263dae2776c37b1b28ae246943cf719eb6946a1db05128a61"
+    },
+    {
+      "path": "rust-crates/portable-atomic-1.15.0.crate",
+      "bytes": 202705,
+      "sha256": "05c8b63e8d9609db387f0324918f81d68fe27748f084ef092fb35954d0539a85"
+    },
+    {
+      "path": "rust-crates/portable-atomic-util-0.2.8.crate",
+      "bytes": 53874,
+      "sha256": "10ab3eb7f3becc3a1cbc4f2c6f20267996cfc1a6467a873763411b136a122715"
+    },
+    {
+      "path": "rust-crates/potential_utf-0.1.6.crate",
+      "bytes": 10420,
+      "sha256": "d83eb9bc6d8e5cf568e7a1101d60ee05e81ed50ea106026f3d18deeb046d7661"
+    },
+    {
+      "path": "rust-crates/powerfmt-0.2.0.crate",
+      "bytes": 15165,
+      "sha256": "439ee305def115ba05938db6eb1644ff94165c5ab5e9420d1c1bcedbba909391"
+    },
+    {
+      "path": "rust-crates/ppv-lite86-0.2.21.crate",
+      "bytes": 22522,
+      "sha256": "85eae3c4ed2f50dcfe72643da4befc30deadb458a9b590d720cde2f2b1e97da9"
+    },
+    {
+      "path": "rust-crates/precomputed-hash-0.1.1.crate",
+      "bytes": 1640,
+      "sha256": "925383efa346730478fb4838dbe9137d2a47675ad789c546d150a6e1dd4ab31c"
+    },
+    {
+      "path": "rust-crates/predicates-3.1.4.crate",
+      "bytes": 24327,
+      "sha256": "ada8f2932f28a27ee7b70dd6c1c39ea0675c55a36879ab92f3a715eaa1e63cfe"
+    },
+    {
+      "path": "rust-crates/predicates-core-1.0.10.crate",
+      "bytes": 8649,
+      "sha256": "cad38746f3166b4031b1a0d39ad9f954dd291e7854fcc0eed52ee41a0b50d144"
+    },
+    {
+      "path": "rust-crates/predicates-tree-1.0.13.crate",
+      "bytes": 8422,
+      "sha256": "d0de1b847b39c8131db0467e9df1ff60e6d0562ab8e9a16e568ad0fdb372e2f2"
+    },
+    {
+      "path": "rust-crates/pretty_assertions-1.4.1.crate",
+      "bytes": 78952,
+      "sha256": "3ae130e2f271fbc2ac3a40fb1d07180839cdbbe443c7a27e1e3c13c5cac0116d"
+    },
+    {
+      "path": "rust-crates/proc-macro2-1.0.107.crate",
+      "bytes": 59588,
+      "sha256": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9"
+    },
+    {
+      "path": "rust-crates/proptest-1.11.0.crate",
+      "bytes": 207859,
+      "sha256": "4b45fcc2344c680f5025fe57779faef368840d0bd1f42f216291f0dc4ace4744"
+    },
+    {
+      "path": "rust-crates/pxfm-0.1.30.crate",
+      "bytes": 879463,
+      "sha256": "d55d956fa96f5ec02be2e13af0e20391a5aa83d6a074e3ad368959d0fab299ea"
+    },
+    {
+      "path": "rust-crates/quick-error-1.2.3.crate",
+      "bytes": 15066,
+      "sha256": "a1d01941d82fa2ab50be1e79e6714289dd7cde78eba4c074bc5a4374f650dfe0"
+    },
+    {
+      "path": "rust-crates/quick-error-2.0.1.crate",
+      "bytes": 14265,
+      "sha256": "a993555f31e5a609f617c12db6250dedcac1b0a85076912c436e6fc9b2c8e6a3"
+    },
+    {
+      "path": "rust-crates/quote-1.0.47.crate",
+      "bytes": 31622,
+      "sha256": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001"
+    },
+    {
+      "path": "rust-crates/r-efi-5.3.0.crate",
+      "bytes": 64532,
+      "sha256": "69cdb34c158ceb288df11e18b4bd39de994f6657d83847bdffdbd7f346754b0f"
+    },
+    {
+      "path": "rust-crates/r-efi-6.0.0.crate",
+      "bytes": 65303,
+      "sha256": "f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf"
+    },
+    {
+      "path": "rust-crates/rand-0.10.2.crate",
+      "bytes": 104493,
+      "sha256": "c7f5fa3a058cd35567ef9bfa5e75732bee0f9e4c55fa90477bef2dfcdbc4be80"
+    },
+    {
+      "path": "rust-crates/rand-0.9.5.crate",
+      "bytes": 100216,
+      "sha256": "b9ef1d0d795eb7d84685bca4f72f3649f064e6641543d3a8c415898726a57b41"
+    },
+    {
+      "path": "rust-crates/rand_chacha-0.9.0.crate",
+      "bytes": 18258,
+      "sha256": "d3022b5f1df60f26e1ffddd6c66e8aa15de382ae63b3a0c1bfc0e4d3e3f325cb"
+    },
+    {
+      "path": "rust-crates/rand_core-0.10.1.crate",
+      "bytes": 22833,
+      "sha256": "63b8176103e19a2643978565ca18b50549f6101881c443590420e4dc998a3c69"
+    },
+    {
+      "path": "rust-crates/rand_core-0.9.5.crate",
+      "bytes": 24129,
+      "sha256": "76afc826de14238e6e8c374ddcc1fa19e374fd8dd986b0d2af0d02377261d83c"
+    },
+    {
+      "path": "rust-crates/rand_xorshift-0.4.0.crate",
+      "bytes": 10262,
+      "sha256": "513962919efc330f829edb2535844d1b912b0fbe2ca165d613e4e8788bb05a5a"
+    },
+    {
+      "path": "rust-crates/rangemap-1.8.0.crate",
+      "bytes": 62327,
+      "sha256": "a611d15b50743feb4c76b7d03edcb0e64f399c26961e4efe6975bc398be6aa3d"
+    },
+    {
+      "path": "rust-crates/rawpointer-0.2.1.crate",
+      "bytes": 7490,
+      "sha256": "60a357793950651c4ed0f3f52338f53b2f809f32d83a07f72909fa13e4c6c1e3"
+    },
+    {
+      "path": "rust-crates/rayon-1.12.0.crate",
+      "bytes": 183391,
+      "sha256": "fb39b166781f92d482534ef4b4b1b2568f42613b53e5b6c160e24cfbfa30926d"
+    },
+    {
+      "path": "rust-crates/rayon-core-1.13.0.crate",
+      "bytes": 73151,
+      "sha256": "22e18b0f0062d30d4230b2e85ff77fdfe4326feb054b9783a3460d8435c8ab91"
+    },
+    {
+      "path": "rust-crates/rctree-0.6.0.crate",
+      "bytes": 8312,
+      "sha256": "e03e7866abec1101869ffa8e2c8355c4c2419d0214ece0cc3e428e5b94dea6e9"
+    },
+    {
+      "path": "rust-crates/redox_syscall-0.5.18.crate",
+      "bytes": 30747,
+      "sha256": "ed2bf2547551a7053d6fdfafda3f938979645c44812fbfcda098faae3f1a362d"
+    },
+    {
+      "path": "rust-crates/regex-1.13.1.crate",
+      "bytes": 157118,
+      "sha256": "f020237b6c8eed93db2e2cb53c00c60a8e1bc73da7d073199a1180401450218d"
+    },
+    {
+      "path": "rust-crates/regex-automata-0.4.18.crate",
+      "bytes": 628707,
+      "sha256": "ad8553b9b26413251cbf30e620595c7a41b3887f03da04579c0e6b0d6a06b4b2"
+    },
+    {
+      "path": "rust-crates/regex-syntax-0.8.11.crate",
+      "bytes": 359055,
+      "sha256": "d6f6ff9a378485b298a5286656da665ba74413d36db0979633275d2e708145d4"
+    },
+    {
+      "path": "rust-crates/rgb-0.8.53.crate",
+      "bytes": 18607,
+      "sha256": "47b34b781b31e5d73e9fbc8689c70551fd1ade9a19e3e28cfec8580a79290cc4"
+    },
+    {
+      "path": "rust-crates/rustc-hash-2.1.3.crate",
+      "bytes": 14811,
+      "sha256": "6b1e7f9a428571be2dc5bc0505c13fb6bf936822b894ec87abf8a08a4e51742d"
+    },
+    {
+      "path": "rust-crates/rustc_version-0.4.1.crate",
+      "bytes": 12245,
+      "sha256": "cfcb3a22ef46e85b45de6ee7e79d063319ebb6594faafcf1c225ea92ab6e9b92"
+    },
+    {
+      "path": "rust-crates/rustix-1.1.5.crate",
+      "bytes": 425681,
+      "sha256": "891efababe418670775f199f0d233d84843c227a0949a883ce15b37c78d6629d"
+    },
+    {
+      "path": "rust-crates/rustversion-1.0.23.crate",
+      "bytes": 21013,
+      "sha256": "cf54715a573b99ac80df0bc206da022bcd442c974952c7b9720069370852e21f"
+    },
+    {
+      "path": "rust-crates/rusty-fork-0.3.1.crate",
+      "bytes": 21108,
+      "sha256": "cc6bf79ff24e648f6da1f8d1f011e9cac26491b619e6b9280f2b47f1774e6ee2"
+    },
+    {
+      "path": "rust-crates/safe_arch-1.2.0.crate",
+      "bytes": 92112,
+      "sha256": "42c6efa15875e6ecb39ca61fb0b0c1a40b84fac5a5ffe71eef7d1000c8eb3f5f"
+    },
+    {
+      "path": "rust-crates/same-file-1.0.6.crate",
+      "bytes": 10183,
+      "sha256": "93fc1dc3aaa9bfed95e02e6eadabb4baf7e3078b0bd1b4d7b6b0b68378900502"
+    },
+    {
+      "path": "rust-crates/scopeguard-1.2.0.crate",
+      "bytes": 11619,
+      "sha256": "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
+    },
+    {
+      "path": "rust-crates/selectors-0.40.0.crate",
+      "bytes": 70059,
+      "sha256": "eeee001a77567bb05e71652718d3ff76d8697c151ac523e68e9513194eb2b75a"
+    },
+    {
+      "path": "rust-crates/semver-1.0.28.crate",
+      "bytes": 33064,
+      "sha256": "8a7852d02fc848982e0c167ef163aaff9cd91dc640ba85e263cb1ce46fae51cd"
+    },
+    {
+      "path": "rust-crates/serde-1.0.229.crate",
+      "bytes": 83669,
+      "sha256": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba"
+    },
+    {
+      "path": "rust-crates/serde_core-1.0.229.crate",
+      "bytes": 63100,
+      "sha256": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48"
+    },
+    {
+      "path": "rust-crates/serde_derive-1.0.229.crate",
+      "bytes": 59864,
+      "sha256": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348"
+    },
+    {
+      "path": "rust-crates/serde_json-1.0.151.crate",
+      "bytes": 156556,
+      "sha256": "c841b55ecdae098c80dcae9cf767f6f8a0c2cdb3416bbef72181df4d0fe73f14"
+    },
+    {
+      "path": "rust-crates/serde_spanned-1.1.1.crate",
+      "bytes": 11025,
+      "sha256": "6662b5879511e06e8999a8a235d848113e942c9124f211511b16466ee2995f26"
+    },
+    {
+      "path": "rust-crates/servo_arc-0.4.3.crate",
+      "bytes": 17887,
+      "sha256": "170fb83ab34de17dc69aa7c67482b22218ddb85da56546f9bd6b929e32a05930"
+    },
+    {
+      "path": "rust-crates/sha2-0.11.0.crate",
+      "bytes": 33969,
+      "sha256": "446ba717509524cb3f22f17ecc096f10f4822d76ab5c0b9822c5f9c284e825f4"
+    },
+    {
+      "path": "rust-crates/shell-words-1.1.1.crate",
+      "bytes": 10012,
+      "sha256": "dc6fe69c597f9c37bfeeeeeb33da3530379845f10be461a66d16d03eca2ded77"
+    },
+    {
+      "path": "rust-crates/shlex-2.0.1.crate",
+      "bytes": 19332,
+      "sha256": "f8fadd59c855ef2080decdef8ff161eb6661b86933c9d82e5ba29dc602a55aba"
+    },
+    {
+      "path": "rust-crates/simba-0.10.2.crate",
+      "bytes": 59795,
+      "sha256": "f1a7200d82ff1c7b4235efd12f11e2537a402c91cf83a5cb97ce80eef787fde7"
+    },
+    {
+      "path": "rust-crates/simd-adler32-0.3.10.crate",
+      "bytes": 18760,
+      "sha256": "3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea"
+    },
+    {
+      "path": "rust-crates/simdutf8-0.1.5.crate",
+      "bytes": 28488,
+      "sha256": "e3a9fe34e3e7a50316060351f37187a3f546bce95496156754b601a5fa71b76e"
+    },
+    {
+      "path": "rust-crates/siphasher-1.0.3.crate",
+      "bytes": 11643,
+      "sha256": "8ee5873ec9cce0195efcb7a4e9507a04cd49aec9c83d0389df45b1ef7ba2e649"
+    },
+    {
+      "path": "rust-crates/slab-0.4.12.crate",
+      "bytes": 19080,
+      "sha256": "0c790de23124f9ab44544d7ac05d60440adc586479ce501c1d6d7da3cd8c9cf5"
+    },
+    {
+      "path": "rust-crates/smallvec-1.16.1.crate",
+      "bytes": 32694,
+      "sha256": "ba467056f1b547ed52077911161fc86985becbc60e8e1857c8a144dab0def891"
+    },
+    {
+      "path": "rust-crates/stable_deref_trait-1.2.1.crate",
+      "bytes": 8186,
+      "sha256": "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
+    },
+    {
+      "path": "rust-crates/static_assertions-1.1.0.crate",
+      "bytes": 18480,
+      "sha256": "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
+    },
+    {
+      "path": "rust-crates/string_cache-0.10.0.crate",
+      "bytes": 16936,
+      "sha256": "daf8762eb74d0e3b53126a15f88db5de3c8ee98cd3b5e3b58c1a9e21c6438873"
+    },
+    {
+      "path": "rust-crates/string_cache-0.9.0.crate",
+      "bytes": 17402,
+      "sha256": "a18596f8c785a729f2819c0f6a7eae6ebeebdfffbfe4214ae6b087f690e31901"
+    },
+    {
+      "path": "rust-crates/string_cache_codegen-0.6.1.crate",
+      "bytes": 8968,
+      "sha256": "585635e46db231059f76c5849798146164652513eb9e8ab2685939dd90f29b69"
+    },
+    {
+      "path": "rust-crates/stringprep-0.1.5.crate",
+      "bytes": 23573,
+      "sha256": "7b4df3d392d81bd458a8a621b8bffbd2302a12ffe288a9d931670948749463b1"
+    },
+    {
+      "path": "rust-crates/strsim-0.11.1.crate",
+      "bytes": 14266,
+      "sha256": "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
+    },
+    {
+      "path": "rust-crates/syn-2.0.119.crate",
+      "bytes": 307407,
+      "sha256": "872831b642d1a07999a962a351ed35b955ea2cfc8f3862091e2a240a84f17297"
+    },
+    {
+      "path": "rust-crates/syn-3.0.6.crate",
+      "bytes": 313821,
+      "sha256": "8593e8e72159ed2257d083c7a454a85cbf854f37a0966d8d483aff8c8a3ebcee"
+    },
+    {
+      "path": "rust-crates/synstructure-0.14.0.crate",
+      "bytes": 19010,
+      "sha256": "901704edd0dfe137f1987838ee4f259e4e063c31371bdb423f7ae38ec6f77f02"
+    },
+    {
+      "path": "rust-crates/system-deps-7.0.8.crate",
+      "bytes": 30092,
+      "sha256": "396a35feb67335377e0251fcbc1092fc85c484bd4e3a7a54319399da127796e7"
+    },
+    {
+      "path": "rust-crates/system-deps-9.0.0.crate",
+      "bytes": 63166,
+      "sha256": "8a0dae2cbca1f0ff93795713cfe0a4c02f760e3c0b8ae2ab4ec4045808ff429f"
+    },
+    {
+      "path": "rust-crates/target-lexicon-0.13.5.crate",
+      "bytes": 26928,
+      "sha256": "adb6935a6f5c20170eeceb1a3835a49e12e19d792f6dd344ccc76a985ca5a6ca"
+    },
+    {
+      "path": "rust-crates/tempfile-3.27.0.crate",
+      "bytes": 44780,
+      "sha256": "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
+    },
+    {
+      "path": "rust-crates/tendril-0.5.1.crate",
+      "bytes": 45663,
+      "sha256": "5fed54709c5b3a53d09bb1c113ea4f5ceafd1e772ddcb0030a82e1d56c087b08"
+    },
+    {
+      "path": "rust-crates/termtree-0.5.1.crate",
+      "bytes": 8498,
+      "sha256": "8f50febec83f5ee1df3015341d8bd429f2d1cc62bcba7ea2076759d315084683"
+    },
+    {
+      "path": "rust-crates/thiserror-2.0.20.crate",
+      "bytes": 28969,
+      "sha256": "ec86235f5fcc2a73650310756d2ac5b138a5780bbbdfae3eeccec992c435ba4f"
+    },
+    {
+      "path": "rust-crates/thiserror-impl-2.0.20.crate",
+      "bytes": 21436,
+      "sha256": "bc04cd3e1236dd4a98afca4569f2deb3f120e5422a4023be2cb683f8486292af"
+    },
+    {
+      "path": "rust-crates/time-0.3.55.crate",
+      "bytes": 279955,
+      "sha256": "cdb87b95ec50ddfa440816d227a17b2ccbdda963a316a727fda0fc4334f7d134"
+    },
+    {
+      "path": "rust-crates/time-core-0.1.9.crate",
+      "bytes": 10320,
+      "sha256": "9e1c906769ad99c88eaa54e728060edef082f8e358ff32030cb7c7d315e81109"
+    },
+    {
+      "path": "rust-crates/time-macros-0.2.32.crate",
+      "bytes": 33664,
+      "sha256": "7e689342a48d2ea927c87ea50cabf8594854bf940e9310208848d680d668ed85"
+    },
+    {
+      "path": "rust-crates/tinystr-0.8.4.crate",
+      "bytes": 25003,
+      "sha256": "b1e27c91459209c2986af3dcf603a5a74a4368754ce37414f59acc971167f643"
+    },
+    {
+      "path": "rust-crates/tinytemplate-1.2.1.crate",
+      "bytes": 26490,
+      "sha256": "be4d6b5f19ff7664e8c98d03e2139cb510db9b0a60b55f8e8709b689d939b6bc"
+    },
+    {
+      "path": "rust-crates/tinyvec-1.13.3.crate",
+      "bytes": 60306,
+      "sha256": "fd3ca314f692efd6c868f8408f53fe444634a845f96c028b97d35f6a1f79f0ee"
+    },
+    {
+      "path": "rust-crates/toml-1.1.6+spec-1.1.0.crate",
+      "bytes": 55947,
+      "sha256": "920602543f0911ab71da12c50d59701da54c196d1a2bf5cb4b75667f137a406a"
+    },
+    {
+      "path": "rust-crates/toml_datetime-1.1.1+spec-1.1.0.crate",
+      "bytes": 17982,
+      "sha256": "3165f65f62e28e0115a00b2ebdd37eb6f3b641855f9d636d3cd4103767159ad7"
+    },
+    {
+      "path": "rust-crates/toml_parser-1.1.3+spec-1.1.0.crate",
+      "bytes": 35888,
+      "sha256": "1d38ac1cf9b95face32296c0a3ede1fdc270627c9d9c02a7274dd6d960dc4d56"
+    },
+    {
+      "path": "rust-crates/toml_writer-1.1.2+spec-1.1.0.crate",
+      "bytes": 18968,
+      "sha256": "7d56353a2a665ad0f41a421187180aab746c8c325620617ad883a99a1cbe66d2"
+    },
+    {
+      "path": "rust-crates/typenum-1.20.1.crate",
+      "bytes": 105479,
+      "sha256": "b6f5e870be6c3b371b77fe0ee0bafb859fa4964b4404c27de1d380043c4dda20"
+    },
+    {
+      "path": "rust-crates/unarray-0.1.4.crate",
+      "bytes": 12895,
+      "sha256": "eaea85b334db583fe3274d12b4cd1880032beab409c0d774be044d4480ab9a94"
+    },
+    {
+      "path": "rust-crates/unicode-bidi-0.3.18.crate",
+      "bytes": 58300,
+      "sha256": "5c1cb5db39152898a79168971543b1cb5020dff7fe43c8dc468b0885f5e29df5"
+    },
+    {
+      "path": "rust-crates/unicode-ident-1.0.26.crate",
+      "bytes": 48425,
+      "sha256": "d245f478577f809a851594d02313b640fb437e0bb33866753cff937863096954"
+    },
+    {
+      "path": "rust-crates/unicode-normalization-0.1.25.crate",
+      "bytes": 128462,
+      "sha256": "5fd4f6878c9cb28d874b009da9e8d183b5abc80117c40bbd187a1fde336be6e8"
+    },
+    {
+      "path": "rust-crates/unicode-properties-0.1.4.crate",
+      "bytes": 42752,
+      "sha256": "7df058c713841ad818f1dc5d3fd88063241cc61f49f5fbea4b951e8cf5a8d71d"
+    },
+    {
+      "path": "rust-crates/url-2.5.8.crate",
+      "bytes": 86512,
+      "sha256": "ff67a8a4397373c3ef660812acab3268222035010ab8680ec4215f38ba3d0eed"
+    },
+    {
+      "path": "rust-crates/utf8_iter-1.0.4.crate",
+      "bytes": 10437,
+      "sha256": "b6c140620e7ffbb22c2dee59cafe6084a59b5ffc27a8859a5f0d494b5d52b6be"
+    },
+    {
+      "path": "rust-crates/utf8parse-0.2.2.crate",
+      "bytes": 13499,
+      "sha256": "06abde3611657adf66d383f00b093d7faecc7fa57071cce2578660c9f1010821"
+    },
+    {
+      "path": "rust-crates/version-compare-0.2.1.crate",
+      "bytes": 14245,
+      "sha256": "03c2856837ef78f57382f06b2b8563a2f512f7185d732608fd9176cb3b8edf0e"
+    },
+    {
+      "path": "rust-crates/version_check-0.9.5.crate",
+      "bytes": 15554,
+      "sha256": "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
+    },
+    {
+      "path": "rust-crates/wait-timeout-0.2.1.crate",
+      "bytes": 11435,
+      "sha256": "09ac3b126d3914f9849036f826e054cbabdc8519970b8998ddaf3b5bd3c65f11"
+    },
+    {
+      "path": "rust-crates/walkdir-2.5.0.crate",
+      "bytes": 23951,
+      "sha256": "29790946404f91d9c5d06f9874efddea1dc06c5efe94541a7d6863108e3a5e4b"
+    },
+    {
+      "path": "rust-crates/wasip2-1.0.4+wasi-0.2.12.crate",
+      "bytes": 135311,
+      "sha256": "b67efb37e106e55ce722a510d6b5f9c17f083e5fc79afc2badeb12cc313d9487"
+    },
+    {
+      "path": "rust-crates/wasm-bindgen-0.2.128.crate",
+      "bytes": 70345,
+      "sha256": "aecb87a33d3b0c5e3b7aa46336eaf486cffafbd281b195e4c8b80d50df2351bf"
+    },
+    {
+      "path": "rust-crates/wasm-bindgen-macro-0.2.128.crate",
+      "bytes": 9595,
+      "sha256": "a690d511e3c1a8b3a55e33511e3c2c00c78415cd23650f32b808627f5696b9ed"
+    },
+    {
+      "path": "rust-crates/wasm-bindgen-macro-support-0.2.128.crate",
+      "bytes": 118512,
+      "sha256": "411e4887f0071ef2d2164a9d5fdf2d20efbef78fccd3a78b0c10a1dc5295e48a"
+    },
+    {
+      "path": "rust-crates/wasm-bindgen-shared-0.2.128.crate",
+      "bytes": 12994,
+      "sha256": "81941cd78d0c92026c33e5e01312845a4cb1e9af3407f9134b100dd03144103e"
+    },
+    {
+      "path": "rust-crates/web-sys-0.3.105.crate",
+      "bytes": 682289,
+      "sha256": "9fbddc4a036f00ec4f18c83445bd3115cb306a91da554919a099d9222fe4a7f8"
+    },
+    {
+      "path": "rust-crates/web_atoms-0.2.6.crate",
+      "bytes": 27911,
+      "sha256": "ba8b815c1b593dc0baf78dd0f4fc8fdb2de53198fb1163738093e9a311c33fb3"
+    },
+    {
+      "path": "rust-crates/weezl-0.1.12.crate",
+      "bytes": 46045,
+      "sha256": "a28ac98ddc8b9274cb41bb4d9d4d5c425b6020c50c46f25559911905610b4a88"
+    },
+    {
+      "path": "rust-crates/weezl-0.2.1.crate",
+      "bytes": 76689,
+      "sha256": "d4ca08e5ef825b65b056d9efbd95c8750683f0a6d0466d02e96dc2e4e360f3d2"
+    },
+    {
+      "path": "rust-crates/wide-1.7.1.crate",
+      "bytes": 209737,
+      "sha256": "d920ac99c3c8edce110cb8d07dbb324d6d026011dce85b1e9355b70f0adacc4f"
+    },
+    {
+      "path": "rust-crates/winapi-0.3.9.crate",
+      "bytes": 1200382,
+      "sha256": "5c839a674fcd7a98952e593242ea400abe93992746761e38641405d28b00f419"
+    },
+    {
+      "path": "rust-crates/winapi-i686-pc-windows-gnu-0.4.0.crate",
+      "bytes": 2918815,
+      "sha256": "ac3b87c63620426dd9b991e5ce0329eff545bccbbb34f3be09ff6fb6ab51b7b6"
+    },
+    {
+      "path": "rust-crates/winapi-util-0.1.11.crate",
+      "bytes": 13368,
+      "sha256": "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
+    },
+    {
+      "path": "rust-crates/winapi-x86_64-pc-windows-gnu-0.4.0.crate",
+      "bytes": 2947998,
+      "sha256": "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
+    },
+    {
+      "path": "rust-crates/windows-core-0.62.2.crate",
+      "bytes": 36932,
+      "sha256": "b8e83a14d34d0623b51dce9581199302a221863196a1dde71a7663a4c2be9deb"
+    },
+    {
+      "path": "rust-crates/windows-implement-0.60.2.crate",
+      "bytes": 15325,
+      "sha256": "053e2e040ab57b9dc951b72c264860db7eb3b0200ba345b4e4c3b14f67855ddf"
+    },
+    {
+      "path": "rust-crates/windows-interface-0.59.3.crate",
+      "bytes": 11809,
+      "sha256": "3f316c4a2570ba26bbec722032c4099d8c8bc095efccdc15688708623367e358"
+    },
+    {
+      "path": "rust-crates/windows-link-0.2.1.crate",
+      "bytes": 6133,
+      "sha256": "f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5"
+    },
+    {
+      "path": "rust-crates/windows-result-0.4.1.crate",
+      "bytes": 13381,
+      "sha256": "7781fa89eaf60850ac3d2da7af8e5242a5ea78d1a11c49bf2910bb5a73853eb5"
+    },
+    {
+      "path": "rust-crates/windows-strings-0.5.1.crate",
+      "bytes": 13966,
+      "sha256": "7837d08f69c77cf6b07689544538e017c1bfcf57e34b4c0ff58e6c2cd3b37091"
+    },
+    {
+      "path": "rust-crates/windows-sys-0.61.2.crate",
+      "bytes": 2517186,
+      "sha256": "ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc"
+    },
+    {
+      "path": "rust-crates/winnow-1.0.4.crate",
+      "bytes": 188513,
+      "sha256": "23b97319f7b8343df12cc98938e5c3eb436064524c8d2b4e30a1d3a36eecdf81"
+    },
+    {
+      "path": "rust-crates/wit-bindgen-0.57.1.crate",
+      "bytes": 71227,
+      "sha256": "1ebf944e87a7c253233ad6766e082e3cd714b5d03812acc24c318f549614536e"
+    },
+    {
+      "path": "rust-crates/writeable-0.6.4.crate",
+      "bytes": 31222,
+      "sha256": "3ad82d2a33cdc9674dc7465672f271e096168fcdbe0f799d9e6db8c5892679dc"
+    },
+    {
+      "path": "rust-crates/xml5ever-0.39.0.crate",
+      "bytes": 42319,
+      "sha256": "5ab627f34ff61b80d756180d556f9c68801d836d271b3b8c094504ceca69d221"
+    },
+    {
+      "path": "rust-crates/yansi-1.0.1.crate",
+      "bytes": 75497,
+      "sha256": "cfe53a6657fd280eaa890a3bc59152892ffa3e30101319d168b781ed6529b049"
+    },
+    {
+      "path": "rust-crates/yeslogic-fontconfig-sys-6.0.1.crate",
+      "bytes": 7821,
+      "sha256": "1d8b8abf912b9a29ff112e1671c97c33636903d13a69712037190e6805af4f76"
+    },
+    {
+      "path": "rust-crates/yoke-0.8.3.crate",
+      "bytes": 33132,
+      "sha256": "709fe23a0424b6a435d82152b1bd3fdfb0833487d5fa90d05d42762a9891fef5"
+    },
+    {
+      "path": "rust-crates/yoke-derive-0.8.3.crate",
+      "bytes": 15106,
+      "sha256": "33811428bee40dbceb6d545e95754741d17a6aef9a4849f0fd62e2ba4f412a78"
+    },
+    {
+      "path": "rust-crates/zerocopy-0.8.57.crate",
+      "bytes": 285690,
+      "sha256": "d35102a9f36d089ccae9e4c6802bc118be4487b80aaffc0ab4e0cf5ce92d2873"
+    },
+    {
+      "path": "rust-crates/zerocopy-derive-0.8.57.crate",
+      "bytes": 106175,
+      "sha256": "146c01f5ab44258da43cf276c74a2763db2ff3969c9c652c3f2de07041d0b2bc"
+    },
+    {
+      "path": "rust-crates/zerofrom-0.1.8.crate",
+      "bytes": 6156,
+      "sha256": "0ec05a11813ea801ff6d75110ad09cd0824ddba17dfe17128ea0d5f68e6c5272"
+    },
+    {
+      "path": "rust-crates/zerofrom-derive-0.1.8.crate",
+      "bytes": 8834,
+      "sha256": "f75b4683f6c7f45248d4d64056a24298c6281e0993356d7d1b4a1a962ef10d4a"
+    },
+    {
+      "path": "rust-crates/zerotrie-0.2.5.crate",
+      "bytes": 84204,
+      "sha256": "4ea269c3bd32f0a32c321907a2ae912ba6f4649bb0fc764a15627e99a7095a3f"
+    },
+    {
+      "path": "rust-crates/zerovec-0.11.8.crate",
+      "bytes": 130820,
+      "sha256": "bb0464e17806c1d976d5cba29399c7f08e516e279e2ba493f63123b5fca67dd8"
+    },
+    {
+      "path": "rust-crates/zerovec-derive-0.11.6.crate",
+      "bytes": 23102,
+      "sha256": "34df6fc39dbd26ddc9c10e6a2984476e13acce22e64e4487636ef494369225da"
+    },
+    {
+      "path": "rust-crates/zlib-rs-0.6.8.crate",
+      "bytes": 215857,
+      "sha256": "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112"
+    },
+    {
+      "path": "rust-crates/zmij-1.0.23.crate",
+      "bytes": 28612,
+      "sha256": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b"
+    },
+    {
+      "path": "rust-crates/zune-core-0.5.3.crate",
+      "bytes": 30419,
+      "sha256": "d56377fd46368984a170bc5aac5567e52ca5da874caa60bea39fcbca78fb658b"
+    },
+    {
+      "path": "rust-crates/zune-jpeg-0.5.15.crate",
+      "bytes": 88879,
+      "sha256": "27bc9d5b815bc103f142aa054f561d9187d191692ec7c2d1e2b4737f8dbd7296"
+    },
+    {
+      "path": "sharp-libvips/00-v1.3.4.tar.gz",
+      "bytes": 24490,
+      "sha256": "a8e96acb479c9bc1a5b7950f8f25aa6c8e1ef3a19755b45cf2f00d506aeaccc0"
+    },
+    {
+      "path": "sharp-libvips/01-0.5.tar.gz",
+      "bytes": 13056,
+      "sha256": "f7a1cbd7579baaf575c66f9d99fb6295e9b0684a28b095967cfda17857595303"
+    },
+    {
+      "path": "sharp-libvips/02-2.3.3.tar.gz",
+      "bytes": 2447397,
+      "sha256": "f9c65aa9c852eb8255b636fd9f07ce1c406f061ec19a2e7d508b318ca0c907d1"
+    },
+    {
+      "path": "sharp-libvips/03-libffi-3.8.0.tar.gz",
+      "bytes": 1581626,
+      "sha256": "7da3e2d9a171eb0a038f592ecad3ff2bb2550f3496d87b3b29ad0cf4430c0db4"
+    },
+    {
+      "path": "sharp-libvips/04-glib-2.90.0.tar.xz",
+      "bytes": 5830480,
+      "sha256": "17d15cac2af80a33271127408e0abc2748eb297c595c2a26409e81e14e7d1b8f"
+    },
+    {
+      "path": "sharp-libvips/05-glib-without-gregex.patch",
+      "bytes": 7759,
+      "sha256": "b1f2930a11292e529de137c7eb723850e0cc0969b1a2b0358196389312acd272"
+    },
+    {
+      "path": "sharp-libvips/06-libxml2-2.15.4.tar.xz",
+      "bytes": 3177444,
+      "sha256": "98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821"
+    },
+    {
+      "path": "sharp-libvips/07-libexif-0.6.26.tar.xz",
+      "bytes": 1335488,
+      "sha256": "4a055ed6575e61ca46c3172be3c753cc16c9becd0f99ec71d58dd0e471476c0c"
+    },
+    {
+      "path": "sharp-libvips/08-lcms2-2.19.1.tar.gz",
+      "bytes": 5728743,
+      "sha256": "bfc54f7bab59fbc921012014a8032e4cba4abd46db47d46b76416a8c0b2815c8"
+    },
+    {
+      "path": "sharp-libvips/09-libaom-3.15.1.tar.gz",
+      "bytes": 6623477,
+      "sha256": "8ca0c52746174603500f0adb6f2a215d69c9ca2aab2acb3caa06fb791d8d01bf"
+    },
+    {
+      "path": "sharp-libvips/10-libheif-1.23.5.tar.gz",
+      "bytes": 2276803,
+      "sha256": "fd9036064c4432f0550d15072ddf34956a248279ee9aeaff0fba3fa0f77d8f1a"
+    },
+    {
+      "path": "sharp-libvips/11-0826579.tar.gz",
+      "bytes": 2443542,
+      "sha256": "b680167bd5d9afebdd576a12f8c49d2c9066a3b92ef96a2b2c5f7829b8600fe5"
+    },
+    {
+      "path": "sharp-libvips/12-f90668e0e4fb79c81e1f24a0ccc0e2090af761bf.patch",
+      "bytes": 8103,
+      "sha256": "a65f87cadf3a6052e44d6314c906f6e2891352f82646b8a6f0b8fcf2c1891e7c"
+    },
+    {
+      "path": "sharp-libvips/13-v1.6.58.tar.gz",
+      "bytes": 1592190,
+      "sha256": "a9d4df463d36a6e5f9c29bd6f4967312d17e996c1854f3511f833924eb1993cf"
+    },
+    {
+      "path": "sharp-libvips/14-v2.4.1.tar.gz",
+      "bytes": 45792,
+      "sha256": "47d2a84b7b1052975c9d50a3d4e3cacbf57b43d84a4c3131210848ead9964dfb"
+    },
+    {
+      "path": "sharp-libvips/15-libwebp-1.6.0.tar.gz",
+      "bytes": 4296070,
+      "sha256": "e4ab7009bf0629fd11982d4c2aa83964cf244cffba7347ecd39019a9e38c4564"
+    },
+    {
+      "path": "sharp-libvips/16-libtiff-v4.7.2.tar.gz",
+      "bytes": 2616788,
+      "sha256": "62b15f44c10106065211efa22a2dc77937bd97ee1f6e3afd2c9659010de112eb"
+    },
+    {
+      "path": "sharp-libvips/17-1.4.0.tar.gz",
+      "bytes": 3691240,
+      "sha256": "e72241ac9524bb653ae52ced768b508045d4438726a303f10181a38f764a453c"
+    },
+    {
+      "path": "sharp-libvips/18-VER-2-14-3.tar.gz",
+      "bytes": 2515533,
+      "sha256": "dc49de6b01a266eef4876a4dd34d9842c475d3e28ff2eff63bd2fb760ab56261"
+    },
+    {
+      "path": "sharp-libvips/19-expat-2.8.5.tar.xz",
+      "bytes": 528380,
+      "sha256": "1e727b8933ec51a77a9a9d9afcf8e688bce45d907c13e36ab7393fe36e703182"
+    },
+    {
+      "path": "sharp-libvips/20-libarchive-3.8.9.tar.xz",
+      "bytes": 6617696,
+      "sha256": "888c934f9d95648ecb9163dc8e23ab80a476ecb81a8f1154704a227b5b676dde"
+    },
+    {
+      "path": "sharp-libvips/21-fontconfig-2.18.3.tar.gz",
+      "bytes": 666753,
+      "sha256": "9ae01e1d53acdef56010c5451cd34aa41d325b2faccd8606448d8fa01b2496b3"
+    },
+    {
+      "path": "sharp-libvips/22-14.5.0.tar.gz",
+      "bytes": 38777964,
+      "sha256": "97ec7488a46b974e18e08ee774af93173e7e1dbf738424796eb315ebcb735ec5"
+    },
+    {
+      "path": "sharp-libvips/23-pixman-0.46.4.tar.gz",
+      "bytes": 827198,
+      "sha256": "d09c44ebc3bd5bee7021c79f922fe8fb2fb57f7320f55e97ff9914d2346a591c"
+    },
+    {
+      "path": "sharp-libvips/24-cairo-1.18.6.tar.xz",
+      "bytes": 32725456,
+      "sha256": "1c767308174337a74694da0f3ec069c271452163a1ef4540964c50c301f157d4"
+    },
+    {
+      "path": "sharp-libvips/25-fribidi-1.0.17.tar.xz",
+      "bytes": 1203284,
+      "sha256": "6949dcde27d41cebad1fd741fcafc36d55a1020d2d872d4a6eb3914caabbada2"
+    },
+    {
+      "path": "sharp-libvips/26-pango-1.58.2.tar.xz",
+      "bytes": 1918112,
+      "sha256": "342385b6ca3b7c73455d7c80a13b7dbe4489e00bc3bd4c5bd6ed4dce421e374a"
+    },
+    {
+      "path": "sharp-libvips/27-librsvg-2.63.2.tar.xz",
+      "bytes": 6768408,
+      "sha256": "852b18e1a00b8605528825a27dc7748bff2a5dd254028f59dc22a34ea57e81b6"
+    },
+    {
+      "path": "sharp-libvips/28-9106011db93d701728ac2c9da50c9ab2c1bb5dc6.patch",
+      "bytes": 5111,
+      "sha256": "8b841d2ec8feb964fa76859075e0e0c41b69136ba143cf0d26469d9bebc19231"
+    },
+    {
+      "path": "sharp-libvips/29-v0.5.4.tar.gz",
+      "bytes": 40028,
+      "sha256": "83a70a15bc2da41f081a44ebc58ee48e2e1d524a6d3fdb4a24064afa08d5ad4d"
+    },
+    {
+      "path": "sharp-libvips/30-v2.0.2.tar.gz",
+      "bytes": 1518872,
+      "sha256": "aa8d193bb887c348c419780511dd03b374f4e07af8812b6d3f80c8537cf1ef2c"
+    },
+    {
+      "path": "sharp-libvips/31-383.patch",
+      "bytes": 7567,
+      "sha256": "57658db2a11ae964755e513b01db21bcfa408c350b11b3a6ef9bc8576fb749ba"
+    },
+    {
+      "path": "sharp-libvips/32-vips-8.18.7.tar.xz",
+      "bytes": 25425084,
+      "sha256": "5baaead3b0bb20ffdb9e9ff09aa9fda08620923df77b63b436654cb5e0b3bf94"
+    },
+    {
+      "path": "sharp-libvips/33-libvips-cpp-soversion.patch",
+      "bytes": 514,
+      "sha256": "256b7d6f8c973bb53b20cff5171c7117d6b35d3aa4e72d22cb906f4fe1e2c890"
+    },
+    {
+      "path": "sharp-libvips/sharp-v0.35.5.tar.gz",
+      "bytes": 41792658,
+      "sha256": "5c609162a873c7d67c903f5dab39351642eedfc967f090c85e48cb6b8dd395c1"
+    },
+    {
+      "path": "sherpa-onnx/asio-asio-1-24-0.tar.gz",
+      "bytes": 2902485,
+      "sha256": "cbcaaba0f66722787b1a7c33afe1befb3a012b5af3ad7da7ff0f6b8c9b7a8a5b"
+    },
+    {
+      "path": "sherpa-onnx/cargs-v1.0.3.tar.gz",
+      "bytes": 41253,
+      "sha256": "ddba25bd35e9c6c75bc706c126001b8ce8e084d40ef37050e6aa6963e836eb8b"
+    },
+    {
+      "path": "sherpa-onnx/eigen-eigen-5.0.1.tar.gz",
+      "bytes": 2967272,
+      "sha256": "e9c326dc8c05cd1e044c71f30f1b2e34a6161a3b6ecf445d56b53ff1669e3dec"
+    },
+    {
+      "path": "sherpa-onnx/espeak-ng-for-piper-ed530aa113046142eb5115cf2fc9157854d0ffe1.zip",
+      "bytes": 18011501,
+      "sha256": "e4e262cbe34f7fe21f91f1ba3397f2728e1f30eafbae7853f2b753a9ed13f0dd"
+    },
+    {
+      "path": "sherpa-onnx/hclust-cpp-2026-02-25.tar.gz",
+      "bytes": 22523,
+      "sha256": "8f14e024c709d73afb40ae69cb22de4b73dba67cbce40f2e518813da8139ab56"
+    },
+    {
+      "path": "sherpa-onnx/json-v3.12.0.tar.gz",
+      "bytes": 9678593,
+      "sha256": "4b92eb0c06d10683f7447ce9406cb97cd4b453be18d7279320f7b2f025c10187"
+    },
+    {
+      "path": "sherpa-onnx/kaldi-decoder-v0.3.0.tar.gz",
+      "bytes": 51199,
+      "sha256": "b9f34cfb4fd3b1344100eead79ef4d37aa15962274b9e3056de345021f76a1b0"
+    },
+    {
+      "path": "sherpa-onnx/kaldi-native-fbank-v1.22.3.tar.gz",
+      "bytes": 71144,
+      "sha256": "9176cc66fc7ce1edf85cf355b06e320c57db6297df74277f575183468893cf61"
+    },
+    {
+      "path": "sherpa-onnx/openfst-v1.8.5-2026-07-09.tar.gz",
+      "bytes": 1501685,
+      "sha256": "2ff712a32952fcb01d351121a6bc8ccf4fdc6b2aa06ce8df2b3095dedd518c0e"
+    },
+    {
+      "path": "sherpa-onnx/piper-phonemize-f3ff95afc03640bc1399e113e83361192a2fafb4.zip",
+      "bytes": 9805962,
+      "sha256": "d9cca4e2bdc7d6dd8dffb96a4668283dbd3f77a9c194a3e530c1e8eba9406a5d"
+    },
+    {
+      "path": "sherpa-onnx/sherpa-onnx-11afbd009a7f8c08f4bcf2fc1b265d0df4670fbf.tar.gz",
+      "bytes": 11645413,
+      "sha256": "0a8db6c55dd318f4a688faba85f7760b99a6c92e8ef8864479d418531bee1ac2"
+    },
+    {
+      "path": "sherpa-onnx/simple-sentencepiece-v0.7.tar.gz",
+      "bytes": 355335,
+      "sha256": "1748a822060a35baa9f6609f84efc8eb54dc0e74b9ece3d82367b7119fdc75af"
+    }
+  ],
+  "fileCount": 404,
+  "totalBytes": 300808890,
+  "purpose": "Actual third-party source payloads and patches to attach to the same GitHub Release; original upstream archives preserved without modification."
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "jieba",
+    "version": "0.42.1",
+    "upstream": "fxsjy/jieba",
+    "ref": "v0.42.1",
+    "url": "https://raw.githubusercontent.com/fxsjy/jieba/v0.42.1/LICENSE",
+    "path": "python-packages/jieba/LICENSE",
+    "sha256": "18ba0984839f85853b29fadaf992f7dba8fd0ca0fbeae34de2b8735222dc7a37",
+    "bytes": 1075
+  },
+  {
+    "name": "loguru",
+    "version": "0.7.3",
+    "upstream": "Delgan/loguru",
+    "ref": "0.7.3",
+    "url": "https://raw.githubusercontent.com/Delgan/loguru/0.7.3/LICENSE",
+    "path": "python-packages/loguru/LICENSE",
+    "sha256": "b35d026cc7aca9d5859a02eb87ddf7a386a24c986838651bd1f283f94e003327",
+    "bytes": 1056
+  },
+  {
+    "name": "tokenizers",
+    "version": "0.23.2",
+    "upstream": "huggingface/tokenizers",
+    "ref": "v0.23.2",
+    "url": "https://raw.githubusercontent.com/huggingface/tokenizers/v0.23.2/LICENSE",
+    "path": "python-packages/tokenizers/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357
+  },
+  {
+    "name": "flatbuffers",
+    "version": "25.12.19",
+    "upstream": "google/flatbuffers",
+    "ref": "7e163021e59cca4f8e1e35a7c828b5c6b7915953",
+    "url": "https://raw.githubusercontent.com/google/flatbuffers/7e163021e59cca4f8e1e35a7c828b5c6b7915953/LICENSE",
+    "path": "python-packages/flatbuffers/LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "bytes": 11358
+  }
+]

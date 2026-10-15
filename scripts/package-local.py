@@ -8,6 +8,7 @@ import json
 import os
 from pathlib import Path
 import plistlib
+import re
 import shutil
 import subprocess
 import sys
@@ -26,7 +27,18 @@ def copy(src, dst, ignore=None):
         shutil.copy2(src, dst, follow_symlinks=True)
 
 def ignored(directory, names):
-    return [n for n in names if n in {'__pycache__', '.DS_Store', '.git', 'reports', '.test-data', 'tests', 'test', 'fixtures', 'site-packages', 'idlelib', 'tkinter', 'ensurepip', 'turtledemo'} or n.startswith('_tkinter.') or n.endswith(('.pyc', '.pyo'))]
+    return [n for n in names if n in {'__pycache__', '.DS_Store', '.git', 'reports', 'diagnostics', '.fixtures', '.test-data', '.private', '.codex', '.dsh', 'auth.json', 'credentials.json', '.credentials.yaml', 'tests', 'test', 'fixtures', 'site-packages', 'idlelib', 'tkinter', 'ensurepip', 'turtledemo'} or n.startswith(('_tkinter.', '.env')) or n.endswith(('.pyc', '.pyo'))]
+
+def sanitize_semantic_python(dest):
+    # Build-only sysconfig paths must not disclose the developer's home.
+    for source in dest.glob('lib/python*/_sysconfigdata*.py'):
+        contents = source.read_text()
+        contents = re.sub(r'/Users/[^/\s\'";]+', '/build-user', contents)
+        source.write_text(contents)
+    # This unused shared-library install ID can still contain the original uv prefix.
+    for library in dest.glob('lib/libpython*.dylib'):
+        run(['install_name_tool', '-id', '@rpath/' + library.name, library])
+        run(['codesign', '--force', '--sign', '-', library])
 
 def macho(path):
     if not path.is_file() or path.is_symlink(): return False
@@ -37,6 +49,13 @@ def python_runtime(dest):
     semantic = ROOT / '.build/semantic-python'
     if (semantic / 'semantic-manifest.json').is_file():
         copy(semantic, dest, shutil.ignore_patterns('__pycache__', '*.pyc', 'tests', 'test'))
+        sanitize_semantic_python(dest)
+        copy(dest/'lib/python3.12/LICENSE.txt', dest/'LICENSE.txt')
+        model = dest/'models/bge-small-zh-v1.5'
+        model_license = APP_SRC/'packaging/licenses/third-party/model/LICENSE'
+        if not model_license.is_file(): raise RuntimeError('Missing bundled model license')
+        copy(model_license, model/'LICENSE')
+        (model/'MODEL-NOTICE.txt').write_text('BAAI/bge-small-zh-v1.5, ONNX distribution Qdrant/bge-small-zh-v1.5.\nMIT license retained as LICENSE. Upstream model cards and provenance are in Resources/licenses/third-party/model/.\nModel files match semantic-manifest.json SHA-256 entries. No personal index or reranker included.\n')
         result=run([dest/'bin/python3','-B','-I','-c','import sys,json,zipfile,sqlite3,ssl,fastembed,numpy,jieba,onnxruntime; print(json.dumps({"version":sys.version,"prefix":sys.prefix}))'], env={'PATH':'/usr/bin:/bin'})
         parsed=json.loads(result)
         if not Path(parsed['prefix']).resolve().is_relative_to(dest.resolve()):
@@ -106,7 +125,11 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--node', default=shutil.which('node'))
     parser.add_argument('--output', default=str(ROOT/'dist/AI 深度阅读.app'))
+    parser.add_argument('--minimum-macos', default='13.0', help='Declared minimum; audit-release.py checks every bundled Mach-O')
+    parser.add_argument('--build-number', default='1')
     args=parser.parse_args()
+    if not re.fullmatch(r'\d+\.\d+(?:\.\d+)?', args.minimum_macos): raise ValueError('Invalid minimum macOS version')
+    if not args.build_number.isdecimal(): raise ValueError('Build number must be numeric')
     out=Path(args.output).resolve()
     if not out.is_relative_to(ROOT/'dist') or out.suffix!='.app': raise RuntimeError('Output must be .app under desktop/dist')
     electron=APP_SRC/'node_modules/electron/dist/Electron.app'
@@ -153,7 +176,12 @@ def main():
         rel=Path(dependency).relative_to(nm)
         count=2 if rel.parts[0].startswith('@') else 1
         top.add(Path(*rel.parts[:count]))
-    for rel in sorted(top): copy(nm/rel,app/'apps/desktop/node_modules'/rel,ignored)
+    # Native macOS sharp is retained and tested; do not ship a non-target wasm
+    # fallback whose upstream build references an unpinned source HEAD.
+    excluded_optional = {'@img/sharp-wasm32'}
+    for rel in sorted(top):
+        if rel.as_posix() not in excluded_optional:
+            copy(nm/rel,app/'apps/desktop/node_modules'/rel,ignored)
     node=Path(args.node).resolve()
     copy(node,resources/'runtimes/node/bin/node')
     node_license=node.parent.parent/'LICENSE'
@@ -164,10 +192,14 @@ def main():
     plist_path=out/'Contents/Info.plist'
     plist=plistlib.loads(plist_path.read_bytes())
     (out/'Contents/MacOS/Electron').rename(out/'Contents/MacOS/AIReading')
-    plist.update(CFBundleExecutable='AIReading', CFBundleDisplayName='AI 深度阅读',CFBundleName='AI 深度阅读',CFBundleIdentifier='local.aireading.desktop',CFBundleShortVersionString='0.1.0',CFBundleVersion='1',NSHumanReadableCopyright='Local development build; third-party notices included.')
+    plist.pop('ElectronAsarIntegrity', None)
+    plist.update(CFBundleExecutable='AIReading', CFBundleDisplayName='AI 深度阅读',CFBundleName='AI 深度阅读',CFBundleIdentifier='local.aireading.desktop',CFBundleShortVersionString='0.1.0',CFBundleVersion=args.build_number,LSMinimumSystemVersion=args.minimum_macos,NSHumanReadableCopyright='Copyright 2026 ianyu1201; third-party notices included.')
     plist_path.write_bytes(plistlib.dumps(plist))
     copy(APP_SRC/'node_modules/electron/LICENSE',resources/'ELECTRON-LICENSE')
-    notice='''AI 深度阅读 — 本地验证构建\n\nElectron 44.7.0 / Chromium: Electron许可证及LICENSES.chromium.html。\nCodex CLI 0.144.6: runtime/codex/LICENSE 和 NOTICE；不包含认证数据。\nNode: runtimes/node/LICENSE。Python: runtimes/python/LICENSE.txt。\nHarness SDK及依赖: app/apps/desktop/node_modules 内各包许可证及 package.json。\nEPUB/Markdown: app/packages/reader-ui/dist/THIRD_PARTY.md 与 licenses。\n未纳入 Apple Books、Obsidian 专有资源。无正式签名或公证；仅本机安装验收。\n无模型密钥、个人数据、测试数据或示例书籍。\n'''
+    copy(APP_SRC/'node_modules/electron/dist/LICENSES.chromium.html',resources/'LICENSES.chromium.html')
+    copy(APP_SRC/'packaging/licenses',resources/'licenses',ignored)
+    copy(ROOT/'THIRD_PARTY_NOTICES.md',resources/'THIRD_PARTY_NOTICES.md')
+    notice='''AI 深度阅读 — Apple Silicon 预览构建\n\nElectron 44.7.0 / Chromium: ELECTRON-LICENSE 及 LICENSES.chromium.html。\nCodex CLI 0.144.6: runtime/codex/LICENSE 和 NOTICE；不包含认证数据。\nNode: runtimes/node/LICENSE。Python: runtimes/python/LICENSE.txt 与 licenses/third-party/。\nHarness SDK及依赖: app/apps/desktop/node_modules 内各包许可证及 package.json；补充声明在 licenses/third-party/。\nEPUB/Markdown: app/packages/reader-ui/dist/THIRD_PARTY.md 与 licenses。\n完整声明与对应上游源码见 THIRD_PARTY_NOTICES.md、licenses/third-party/ 和同一 GitHub Release 的源码材料。\n未纳入 Apple Books、Obsidian 专有资源。ad-hoc 签名，未公证。\n无模型密钥、个人数据、测试数据或示例书籍；具体结果见发布审计报告。\n'''
     (resources/'THIRD-PARTY-NOTICES.txt').write_text(notice)
     # Changed bundle gets an ad-hoc development signature, not a Developer ID signature.
     run(['codesign','--force','--deep','--sign','-',out])
@@ -175,8 +207,9 @@ def main():
       'python':py_info['version'], 'semantic':json.loads((resources/'runtimes/python/semantic-manifest.json').read_text()) if (resources/'runtimes/python/semantic-manifest.json').exists() else None,'dependencies':manifest['dependencies'],'lockSha256':hashlib.sha256((APP_SRC/'package-lock.json').read_bytes()).hexdigest(),
       'codex':{**codex_info,'bundledSha256':hashlib.sha256((resources/'runtime/codex/bin/codex').read_bytes()).hexdigest()},
       'architecture':run(['uname','-m']), 'minimumMacOS':plist.get('LSMinimumSystemVersion'),
+      'excludedOptionalPackages':sorted(excluded_optional),
       'sourceHashes':{str(p.relative_to(app)):hashlib.sha256(p.read_bytes()).hexdigest() for p in app.rglob('*') if p.is_file() and 'node_modules' not in p.parts and '__pycache__' not in p.parts},
-      'signature':'ad-hoc local only; not notarized','fixturesIncluded':False,'hostCredentialsIncluded':False}
+      'signature':'ad-hoc; not notarized','fixturesIncluded':False,'hostCredentialsIncluded':False}
     # A candidate built under dist/<staging>/ must not replace the current package's evidence.
     (out.parent/'package-evidence.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2))
     print(json.dumps({k:v for k,v in evidence.items() if k != 'sourceHashes'},ensure_ascii=False,indent=2))

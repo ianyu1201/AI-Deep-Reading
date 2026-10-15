@@ -1,0 +1,674 @@
+{
+  "component": "@img/sharp-libvips-darwin-arm64",
+  "version": "1.3.4",
+  "libvipsVersion": "8.18.7",
+  "buildRecipe": "https://github.com/lovell/sharp-libvips/tree/v1.3.4",
+  "sourceFiles": [
+    {
+      "url": "https://github.com/lovell/sharp-libvips/archive/refs/tags/v1.3.4.tar.gz",
+      "archive": "sharp-libvips/00-v1.3.4.tar.gz",
+      "sha256": "a8e96acb479c9bc1a5b7950f8f25aa6c8e1ef3a19755b45cf2f00d506aeaccc0",
+      "bytes": 24490,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/00/LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+          "bytes": 11357
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/frida/proxy-libintl/archive/0.5.tar.gz",
+      "archive": "sharp-libvips/01-0.5.tar.gz",
+      "sha256": "f7a1cbd7579baaf575c66f9d99fb6295e9b0684a28b095967cfda17857595303",
+      "bytes": 13056,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/01/COPYING",
+          "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5",
+          "bytes": 25292
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/zlib-ng/zlib-ng/archive/2.3.3.tar.gz",
+      "archive": "sharp-libvips/02-2.3.3.tar.gz",
+      "sha256": "f9c65aa9c852eb8255b636fd9f07ce1c406f061ec19a2e7d508b318ca0c907d1",
+      "bytes": 2447397,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/02/LICENSE.md",
+          "sha256": "6c9f0d975b41afaa34d22f55bb8986ce69e5cb7ad327cb2b28820cd425edf5ee",
+          "bytes": 867
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/libffi/libffi/releases/download/v3.8.0/libffi-3.8.0.tar.gz",
+      "archive": "sharp-libvips/03-libffi-3.8.0.tar.gz",
+      "sha256": "7da3e2d9a171eb0a038f592ecad3ff2bb2550f3496d87b3b29ad0cf4430c0db4",
+      "bytes": 1581626,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/03/LICENSE-BUILDTOOLS",
+          "sha256": "e67978cd18816c0cb7d29aaaacde7b7447402c2fb321a051698890a8eaedda94",
+          "bytes": 18698
+        },
+        {
+          "path": "sharp-libvips/notices/03/LICENSE",
+          "sha256": "17b64dc60f3b6897a60f971e288b973f655c2edcdf08b25f3c3dd5549857881c",
+          "bytes": 1132
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://download.gnome.org/sources/glib/2.90/glib-2.90.0.tar.xz",
+      "archive": "sharp-libvips/04-glib-2.90.0.tar.xz",
+      "sha256": "17d15cac2af80a33271127408e0abc2748eb297c595c2a26409e81e14e7d1b8f",
+      "bytes": 5830480,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/04/LICENSES/LicenseRef-old-glib-tests.txt",
+          "sha256": "fb261b2d5dbe76c4850f90da763210bc385e52428df6bbfd7b06295ac8a32914",
+          "bytes": 841
+        },
+        {
+          "path": "sharp-libvips/notices/04/docs/reference/COPYING",
+          "sha256": "b1ec1d0e5947f81e815d8771f7d4d90671a94bb10a42dc687fb566de461a57aa",
+          "bytes": 1698
+        },
+        {
+          "path": "sharp-libvips/notices/04/subprojects/gvdb/COPYING",
+          "sha256": "bdbcdaa7858872393e9d6b216bbdc8a23e99d98dd6cdb7cda19458025b9e19fc",
+          "bytes": 26445
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://gist.github.com/kleisauke/284d685efa00908da99ea6afbaaf39ae/raw/bdad5489a61c217850631571caf57f5db6ea8b2c/glib-without-gregex.patch",
+      "archive": "sharp-libvips/05-glib-without-gregex.patch",
+      "sha256": "b1f2930a11292e529de137c7eb723850e0cc0969b1a2b0358196389312acd272",
+      "bytes": 7759,
+      "notices": [],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.4.tar.xz",
+      "archive": "sharp-libvips/06-libxml2-2.15.4.tar.xz",
+      "sha256": "98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821",
+      "bytes": 3177444,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/06/Copyright",
+          "sha256": "5d4873884a890122a4b9b20ad56ac6f7da1d796a5bfcf04a427970ac96217626",
+          "bytes": 1314
+        },
+        {
+          "path": "sharp-libvips/notices/06/test/html-tokenizer/NOTICE",
+          "sha256": "d6a2cb265a0a249a234b89eeffa7f316ebe5bff546672a0a2b1a861dd2238460",
+          "bytes": 1270
+        },
+        {
+          "path": "sharp-libvips/notices/06/result/html-tokenizer/NOTICE",
+          "sha256": "d6a2cb265a0a249a234b89eeffa7f316ebe5bff546672a0a2b1a861dd2238460",
+          "bytes": 1270
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/libexif/libexif/releases/download/v0.6.26/libexif-0.6.26.tar.xz",
+      "archive": "sharp-libvips/07-libexif-0.6.26.tar.xz",
+      "sha256": "4a055ed6575e61ca46c3172be3c753cc16c9becd0f99ec71d58dd0e471476c0c",
+      "bytes": 1335488,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/07/COPYING",
+          "sha256": "36b6d3fa47916943fd5fec313c584784946047ec1337a78b440e5992cb595f89",
+          "bytes": 26434
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/mm2/Little-CMS/releases/download/lcms2.19.1/lcms2-2.19.1.tar.gz",
+      "archive": "sharp-libvips/08-lcms2-2.19.1.tar.gz",
+      "sha256": "bfc54f7bab59fbc921012014a8032e4cba4abd46db47d46b76416a8c0b2815c8",
+      "bytes": 5728743,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/08/LICENSE",
+          "sha256": "6dbd60437f8ef91d8de1f08ad75882547fd4931bfcc3566a0735f28db1484d31",
+          "bytes": 1080
+        },
+        {
+          "path": "sharp-libvips/notices/08/plugins/fast_float/COPYING.GPL3",
+          "sha256": "c53a65c2fd561c87eaabf1072ef5dcab8653042bc15308465f52413585eb6271",
+          "bytes": 35146
+        },
+        {
+          "path": "sharp-libvips/notices/08/plugins/threaded/COPYING.GPL3",
+          "sha256": "c53a65c2fd561c87eaabf1072ef5dcab8653042bc15308465f52413585eb6271",
+          "bytes": 35146
+        },
+        {
+          "path": "sharp-libvips/notices/08/utils/jpgicc/LICENSE_iccjpeg",
+          "sha256": "8baac37d14eed89b82ffcb041677dd701164eb5cc0f26e165fe47eb11afa0dca",
+          "bytes": 3234
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://storage.googleapis.com/aom-releases/libaom-3.15.1.tar.gz",
+      "archive": "sharp-libvips/09-libaom-3.15.1.tar.gz",
+      "sha256": "8ca0c52746174603500f0adb6f2a215d69c9ca2aab2acb3caa06fb791d8d01bf",
+      "bytes": 6623477,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/09/LICENSE",
+          "sha256": "4764a286d8b2faeaf42f4418e7d7a28d58fc8fd4d00a3d0a7f44b0a4099de7f2",
+          "bytes": 1316
+        },
+        {
+          "path": "sharp-libvips/notices/09/third_party/fastfeat/LICENSE",
+          "sha256": "499041ddee5227b6f29ca06c17803e5fe24d60f243c69635cd76b7ba08d0ddd5",
+          "bytes": 1504
+        },
+        {
+          "path": "sharp-libvips/notices/09/third_party/highway/LICENSE-BSD3",
+          "sha256": "d25e82e26acd42ca3ccc9993622631163425b869b9e16284226d534cff6470f2",
+          "bytes": 1515
+        },
+        {
+          "path": "sharp-libvips/notices/09/third_party/libwebm/LICENSE.TXT",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+          "bytes": 1496
+        },
+        {
+          "path": "sharp-libvips/notices/09/third_party/libyuv/LICENSE",
+          "sha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f",
+          "bytes": 1506
+        },
+        {
+          "path": "sharp-libvips/notices/09/third_party/vector/LICENSE",
+          "sha256": "ff6c857ce2708e87701323078aef115c1872a1f80a9649f86dc899b48083bc60",
+          "bytes": 1084
+        },
+        {
+          "path": "sharp-libvips/notices/09/third_party/x86inc/LICENSE",
+          "sha256": "719d8fa235f2068e0ae6d6a7dceb0a7720d7840f0f0ebed29957989e6ded3cd8",
+          "bytes": 936
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/strukturag/libheif/releases/download/v1.23.5/libheif-1.23.5.tar.gz",
+      "archive": "sharp-libvips/10-libheif-1.23.5.tar.gz",
+      "sha256": "fd9036064c4432f0550d15072ddf34956a248279ee9aeaff0fba3fa0f77d8f1a",
+      "bytes": 2276803,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/10/COPYING",
+          "sha256": "fa81ce652315b013359d6e8e4744335f31a50c7c192907176d3632f78a3b4596",
+          "bytes": 44366
+        },
+        {
+          "path": "sharp-libvips/notices/10/examples/COPYING",
+          "sha256": "278ee9bbb13ecb080a131c68927bd589a6a56fd5449ce25e8e594c858864830d",
+          "bytes": 1066
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/mozilla/mozjpeg/archive/0826579.tar.gz",
+      "archive": "sharp-libvips/11-0826579.tar.gz",
+      "sha256": "b680167bd5d9afebdd576a12f8c49d2c9066a3b92ef96a2b2c5f7829b8600fe5",
+      "bytes": 2443542,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/11/LICENSE.md",
+          "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+          "bytes": 5620
+        },
+        {
+          "path": "sharp-libvips/notices/11/release/License.rtf",
+          "sha256": "933e1427ec78050c76396182fd9819a23fef58c17e997b67581852167be971db",
+          "bytes": 2172
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/mozilla/mozjpeg/commit/f90668e0e4fb79c81e1f24a0ccc0e2090af761bf.patch",
+      "archive": "sharp-libvips/12-f90668e0e4fb79c81e1f24a0ccc0e2090af761bf.patch",
+      "sha256": "a65f87cadf3a6052e44d6314c906f6e2891352f82646b8a6f0b8fcf2c1891e7c",
+      "bytes": 8103,
+      "notices": [],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/pnggroup/libpng/archive/v1.6.58.tar.gz",
+      "archive": "sharp-libvips/13-v1.6.58.tar.gz",
+      "sha256": "a9d4df463d36a6e5f9c29bd6f4967312d17e996c1854f3511f833924eb1993cf",
+      "bytes": 1592190,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/13/LICENSE",
+          "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+          "bytes": 5345
+        },
+        {
+          "path": "sharp-libvips/notices/13/ci/LICENSE_MIT.txt",
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+          "bytes": 1036
+        },
+        {
+          "path": "sharp-libvips/notices/13/contrib/gregbook/COPYING",
+          "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572",
+          "bytes": 18097
+        },
+        {
+          "path": "sharp-libvips/notices/13/contrib/gregbook/LICENSE",
+          "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438",
+          "bytes": 2373
+        },
+        {
+          "path": "sharp-libvips/notices/13/contrib/pngexif/LICENSE_MIT.txt",
+          "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+          "bytes": 1036
+        },
+        {
+          "path": "sharp-libvips/notices/13/contrib/pngminus/LICENSE.txt",
+          "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330",
+          "bytes": 1164
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/lovell/libimagequant/archive/v2.4.1.tar.gz",
+      "archive": "sharp-libvips/14-v2.4.1.tar.gz",
+      "sha256": "47d2a84b7b1052975c9d50a3d4e3cacbf57b43d84a4c3131210848ead9964dfb",
+      "bytes": 45792,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/14/COPYRIGHT",
+          "sha256": "7391bfbcde4404cefb9849553362c3ab436f929f5cc1abb57071ec045590ee99",
+          "bytes": 1851
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz",
+      "archive": "sharp-libvips/15-libwebp-1.6.0.tar.gz",
+      "sha256": "e4ab7009bf0629fd11982d4c2aa83964cf244cffba7347ecd39019a9e38c4564",
+      "bytes": 4296070,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/15/COPYING",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+          "bytes": 1496
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://gitlab.com/libtiff/libtiff/-/archive/v4.7.2/libtiff-v4.7.2.tar.gz",
+      "archive": "sharp-libvips/16-libtiff-v4.7.2.tar.gz",
+      "sha256": "62b15f44c10106065211efa22a2dc77937bd97ee1f6e3afd2c9659010de112eb",
+      "bytes": 2616788,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/16/LICENSE.md",
+          "sha256": "0e27c2382d7b8147972bbb746e04059a1152c8d0fda9d03ef1399d1a433c4ade",
+          "bytes": 2416
+        },
+        {
+          "path": "sharp-libvips/notices/16/doc/project/license.rst",
+          "sha256": "02e86af3b805e0f2075ebb5ac512831f6ab2a97ddeb186de076c418956418ba1",
+          "bytes": 1181
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/google/highway/archive/1.4.0.tar.gz",
+      "archive": "sharp-libvips/17-1.4.0.tar.gz",
+      "sha256": "e72241ac9524bb653ae52ced768b508045d4438726a303f10181a38f764a453c",
+      "bytes": 3691240,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/17/LICENSE",
+          "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af",
+          "bytes": 20785
+        },
+        {
+          "path": "sharp-libvips/notices/17/debian/copyright",
+          "sha256": "6e4ecf1cae052b678ea3178dd4b3652d581ee66a82d58db8800dd7d80dd6de76",
+          "bytes": 825
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/freetype/freetype/archive/VER-2-14-3.tar.gz",
+      "archive": "sharp-libvips/18-VER-2-14-3.tar.gz",
+      "sha256": "dc49de6b01a266eef4876a4dd34d9842c475d3e28ff2eff63bd2fb760ab56261",
+      "bytes": 2515533,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/18/LICENSE.TXT",
+          "sha256": "bd36c8b474855fa294c2ec5c184544478ef3720aad37d65a6296a4f264fd2d3b",
+          "bytes": 2149
+        },
+        {
+          "path": "sharp-libvips/notices/18/docs/FTL.TXT",
+          "sha256": "5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f",
+          "bytes": 6743
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/libexpat/libexpat/releases/download/R_2_8_5/expat-2.8.5.tar.xz",
+      "archive": "sharp-libvips/19-expat-2.8.5.tar.xz",
+      "sha256": "1e727b8933ec51a77a9a9d9afcf8e688bce45d907c13e36ab7393fe36e703182",
+      "bytes": 528380,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/19/COPYING",
+          "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+          "bytes": 1144
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/libarchive/libarchive/releases/download/v3.8.9/libarchive-3.8.9.tar.xz",
+      "archive": "sharp-libvips/20-libarchive-3.8.9.tar.xz",
+      "sha256": "888c934f9d95648ecb9163dc8e23ab80a476ecb81a8f1154704a227b5b676dde",
+      "bytes": 6617696,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/20/COPYING",
+          "sha256": "30e556b3959e3985d66efefec5eaac51d4995053caa1d3cffe6eb916f146f229",
+          "bytes": 3089
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.18.3/fontconfig-2.18.3.tar.gz",
+      "archive": "sharp-libvips/21-fontconfig-2.18.3.tar.gz",
+      "sha256": "9ae01e1d53acdef56010c5451cd34aa41d325b2faccd8606448d8fa01b2496b3",
+      "bytes": 666753,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/21/COPYING",
+          "sha256": "51a51aa9823704fd90bccc616cdd17ebabb5b2b3e9cbde886ca02c7002288067",
+          "bytes": 8616
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/harfbuzz/harfbuzz/archive/14.5.0.tar.gz",
+      "archive": "sharp-libvips/22-14.5.0.tar.gz",
+      "sha256": "97ec7488a46b974e18e08ee774af93173e7e1dbf738424796eb315ebcb735ec5",
+      "bytes": 38777964,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/22/COPYING",
+          "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64",
+          "bytes": 1971
+        },
+        {
+          "path": "sharp-libvips/notices/22/perf/texts/COPYING",
+          "sha256": "cf977e70247d5fa9d44955e4d8ed23b503c31f78570f62136756278c2cfcb3c3",
+          "bytes": 1289
+        },
+        {
+          "path": "sharp-libvips/notices/22/src/ms-use/COPYING",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        },
+        {
+          "path": "sharp-libvips/notices/22/test/COPYING",
+          "sha256": "9b35b8485f69cd298fccbb3c40a827dc06cf1185553bef827903497d2944a8d7",
+          "bytes": 4370
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://cairographics.org/releases/pixman-0.46.4.tar.gz",
+      "archive": "sharp-libvips/23-pixman-0.46.4.tar.gz",
+      "sha256": "d09c44ebc3bd5bee7021c79f922fe8fb2fb57f7320f55e97ff9914d2346a591c",
+      "bytes": 827198,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/23/COPYING",
+          "sha256": "fac9270f0987b96ff4533fca3548c633e02083cbba4a0172a3b149b2e4019793",
+          "bytes": 2087
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://cairographics.org/releases/cairo-1.18.6.tar.xz",
+      "archive": "sharp-libvips/24-cairo-1.18.6.tar.xz",
+      "sha256": "1c767308174337a74694da0f3ec069c271452163a1ef4540964c50c301f157d4",
+      "bytes": 32725456,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/24/COPYING",
+          "sha256": "67228a9f7c5f9b67c58f556f1be178f62da4d9e2e6285318d8c74d567255abdf",
+          "bytes": 1576
+        },
+        {
+          "path": "sharp-libvips/notices/24/COPYING-LGPL-2.1",
+          "sha256": "9e9e8608c4cdda51a78cc3a385f4ec9a2e4c96d5ecad74ac8bca5fca3e563b7d",
+          "bytes": 26533
+        },
+        {
+          "path": "sharp-libvips/notices/24/COPYING-MPL-1.1",
+          "sha256": "53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f",
+          "bytes": 25755
+        },
+        {
+          "path": "sharp-libvips/notices/24/perf/COPYING",
+          "sha256": "6f93b45ea874706058ae35bc02df79c3f9daf00948672eea8394cc25d1327d49",
+          "bytes": 229
+        },
+        {
+          "path": "sharp-libvips/notices/24/test/COPYING",
+          "sha256": "a37812e0e27a211272d4c27fa45028c3653e78bb708acccb77c94128dc72b98e",
+          "bytes": 1026
+        },
+        {
+          "path": "sharp-libvips/notices/24/util/COPYING",
+          "sha256": "008e976b6e5e7155ee24322073f42cab7cd6daf90bc2322f1d5c3aacab94111c",
+          "bytes": 138
+        },
+        {
+          "path": "sharp-libvips/notices/24/util/cairo-script/COPYING",
+          "sha256": "25f4d4ce651b1ee6aff713ff986275d6c190a8537e36437886f8bf1497b0a174",
+          "bytes": 656
+        },
+        {
+          "path": "sharp-libvips/notices/24/util/cairo-trace/COPYING",
+          "sha256": "421158645572270264a980b8b130dd988138e4dae20144e22455446e0ef90902",
+          "bytes": 179
+        },
+        {
+          "path": "sharp-libvips/notices/24/util/cairo-trace/COPYING-GPL-3",
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+          "bytes": 35147
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/fribidi/fribidi/releases/download/v1.0.17/fribidi-1.0.17.tar.xz",
+      "archive": "sharp-libvips/25-fribidi-1.0.17.tar.xz",
+      "sha256": "6949dcde27d41cebad1fd741fcafc36d55a1020d2d872d4a6eb3914caabbada2",
+      "bytes": 1203284,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/25/COPYING",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+          "bytes": 26419
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://download.gnome.org/sources/pango/1.58/pango-1.58.2.tar.xz",
+      "archive": "sharp-libvips/26-pango-1.58.2.tar.xz",
+      "sha256": "342385b6ca3b7c73455d7c80a13b7dbe4489e00bc3bd4c5bd6ed4dce421e374a",
+      "bytes": 1918112,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/26/COPYING",
+          "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5",
+          "bytes": 25292
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://download.gnome.org/sources/librsvg/2.63/librsvg-2.63.2.tar.xz",
+      "archive": "sharp-libvips/27-librsvg-2.63.2.tar.xz",
+      "sha256": "852b18e1a00b8605528825a27dc7748bff2a5dd254028f59dc22a34ea57e81b6",
+      "bytes": 6768408,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/27/COPYING.LIB",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+          "bytes": 26530
+        },
+        {
+          "path": "sharp-libvips/notices/27/librsvg-rebind/LICENSE",
+          "sha256": "f9c4c77baa3828004ee54b8a4f2db2e88ed44a6237a493965bf551fac0fcb62d",
+          "bytes": 1023
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/GNOME/librsvg/commit/9106011db93d701728ac2c9da50c9ab2c1bb5dc6.patch",
+      "archive": "sharp-libvips/28-9106011db93d701728ac2c9da50c9ab2c1bb5dc6.patch",
+      "sha256": "8b841d2ec8feb964fa76859075e0e0c41b69136ba143cf0d26469d9bebc19231",
+      "bytes": 5111,
+      "notices": [],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/dloebl/cgif/archive/v0.5.4.tar.gz",
+      "archive": "sharp-libvips/29-v0.5.4.tar.gz",
+      "sha256": "83a70a15bc2da41f081a44ebc58ee48e2e1d524a6d3fdb4a24064afa08d5ad4d",
+      "bytes": 40028,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/29/LICENSE",
+          "sha256": "7264dede477abab4ac3fe8236beb8153845c04ccd33b18f281085087e219fc6d",
+          "bytes": 1099
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/google/libultrahdr/archive/v2.0.2.tar.gz",
+      "archive": "sharp-libvips/30-v2.0.2.tar.gz",
+      "sha256": "aa8d193bb887c348c419780511dd03b374f4e07af8812b6d3f80c8537cf1ef2c",
+      "bytes": 1518872,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/30/LICENSE",
+          "sha256": "c9247b5cb07866938643cc238292434e6f2af8642e1fce10771c0e4cc7909316",
+          "bytes": 12566
+        },
+        {
+          "path": "sharp-libvips/notices/30/LICENSE-APACHE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        {
+          "path": "sharp-libvips/notices/30/LICENSE-MIT",
+          "sha256": "029624bf1488ed7b8c92727d267c95f588c9c12fa6932c207884c2641a7e9d37",
+          "bytes": 1088
+        },
+        {
+          "path": "sharp-libvips/notices/30/adobe-hdr-gain-map-license/NOTICE",
+          "sha256": "746d8c9c414b335bb7c9615918a15a6489a4dcc1c5c3aac2bda410d1072c332a",
+          "bytes": 66
+        },
+        {
+          "path": "sharp-libvips/notices/30/tests/data/LICENSE",
+          "sha256": "c4b2cd68902b8c4a82c9b5ddebe15538acbce7f70a88fcc751e1e921bde89f7f",
+          "bytes": 19354
+        },
+        {
+          "path": "sharp-libvips/notices/30/third_party/image_io/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://patch-diff.githubusercontent.com/raw/google/libultrahdr/pull/383.patch",
+      "archive": "sharp-libvips/31-383.patch",
+      "sha256": "57658db2a11ae964755e513b01db21bcfa408c350b11b3a6ef9bc8576fb749ba",
+      "bytes": 7567,
+      "notices": [],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://github.com/libvips/libvips/releases/download/v8.18.7/vips-8.18.7.tar.xz",
+      "archive": "sharp-libvips/32-vips-8.18.7.tar.xz",
+      "sha256": "5baaead3b0bb20ffdb9e9ff09aa9fda08620923df77b63b436654cb5e0b3bf94",
+      "bytes": 25425084,
+      "notices": [
+        {
+          "path": "sharp-libvips/notices/32/LICENSE",
+          "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+          "bytes": 26530
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "url": "https://gist.githubusercontent.com/lovell/313a6901e9db1bf285f2a1f1180499e4/raw/3988223c7dfa4d22745d9392034b0117abef1446/libvips-cpp-soversion.patch",
+      "archive": "sharp-libvips/33-libvips-cpp-soversion.patch",
+      "sha256": "256b7d6f8c973bb53b20cff5171c7117d6b35d3aa4e72d22cb906f4fe1e2c890",
+      "bytes": 514,
+      "notices": [],
+      "status": "downloaded"
+    },
+    {
+      "component": "sharp native wrapper",
+      "version": "0.35.5",
+      "url": "https://github.com/lovell/sharp/archive/refs/tags/v0.35.5.tar.gz",
+      "archive": "sharp-libvips/sharp-v0.35.5.tar.gz",
+      "sha256": "5c609162a873c7d67c903f5dab39351642eedfc967f090c85e48cb6b8dd395c1",
+      "bytes": 41792658,
+      "status": "downloaded"
+    }
+  ],
+  "notes": [
+    "All upstream archive and patch URLs are extracted from the v1.3.4 build/posix.sh used for macOS.",
+    "Downloaded source archives are staged under dist/release-v0.1.0/third-party-sources for a separate corresponding-source Release asset and are not tracked in Git.",
+    "The librsvg release Cargo.lock will be used as a superset of the dependencies retained after the documented feature edits and cargo update --workspace. Complete Rust dependency sources are handled separately.",
+    "The source asset also includes the sharp 0.35.5 wrapper sources for rebuilding/relinking the addon against a modified native libvips. The non-target wasm32 optional package is excluded from this macOS arm64 release."
+  ]
+}
