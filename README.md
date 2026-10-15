@@ -4,13 +4,15 @@
 
 本仓库是当前 mac 客户端的源码快照，基于 [DSH-apple-Read](https://github.com/ianyu1201/DSH-apple-Read) 演进。客户端内部管理 DeepSeek Harness，由 Codex CLI 提供模型推理。无需运行 DeepSeek Harness 桌面应用。
 
-**当前为预览版本。** 可从 [GitHub Releases](https://github.com/ianyu1201/AI-Deep-Reading/releases/tag/v0.1.0-preview.1) 下载 Apple Silicon 安装包。此次预览包为 `0.1.0`（build 2），要求 **macOS 15+**，使用 ad-hoc 签名、尚未公证。开发 package 版本为 `0.1.0-dev.1`。源码快照和验证范围见 [记录](docs/OPEN_SOURCE.md)。
+**当前为预览版本。** 可从 [GitHub Releases](https://github.com/ianyu1201/AI-Deep-Reading/releases/tag/v0.1.0-preview.2) 下载 Apple Silicon 安装包。此次预览包为 `0.1.0`（build 3），要求 **macOS 15+**，使用 ad-hoc 签名、尚未公证。开发 package 版本为 `0.1.0-dev.1`。源码快照和验证范围见 [记录](docs/OPEN_SOURCE.md)。
 
 ## 下载与安装
 
-1. 从上述 Release 下载 `AI-Deep-Reading-0.1.0-macOS-arm64.dmg`，对照 `SHA256SUMS.txt` 核验文件。
+1. 从上述 Release 下载 `AI-Deep-Reading-0.1.0-preview.2-macOS-arm64.dmg`，对照 `SHA256SUMS.txt` 核验文件。
 2. 打开 DMG，将「AI 深度阅读」拖入 Applications，然后从「应用程序」启动。
 3. 首次启动为空书库。导入自己有权使用的 EPUB；AI 功能通过应用设置中的独立 ChatGPT 登录启用。
+
+本轮安装包约 681 MB，比 preview.1 减少约 120 MB（15%）；安装后逻辑占用约 1.26 GB。仅裁剪未启用的办公、语音、通用预览负载和跨平台／调试资源，保留全部核心运行时与本地语义模型。第三方源码附件不需要安装。
 
 安装包包含 Node、Python、Harness、Codex CLI 及本地检索模型，无需另外安装开发环境。该预览版未公证，首次打开可能受到 macOS 限制；需要时遵循 [Apple 官方打开流程](https://support.apple.com/102445)。Intel 不适用；本轮未在 macOS 15 实机或另一台电脑验证。项目的 macOS 13 目标保留，当前依赖的兼容性偏差是待修复项。
 
@@ -58,7 +60,7 @@ npm run test:desktop   # 原生 Electron：空书库、合成 EPUB、阅读、�
 
 默认测试关闭 AI，使用合成／临时数据。真实书籍、真实模型质量、付费调用和历史私有验收脚本不在这组测试中。
 
-本地 `.app` 构建与可选语义运行时准备见 [构建说明](docs/BUILD.md)。Release 附第三方声明、对应源码材料和校验值。Developer ID、公证与自动更新尚未完成；预览包验证范围见 [发布与敏感信息检查](docs/RELEASE-2026-10-15.md)。
+本地 `.app` 构建与可选语义运行时准备见 [构建说明](docs/BUILD.md)。Release 附第三方声明、对应源码材料和校验值。Developer ID、公证与自动更新尚未完成；本轮验证与裁剪范围见 [preview.2 发布记录](docs/RELEASE-2026-10-15-preview.2.md)；首次发布与敏感信息检查见 [历史记录](docs/RELEASE-2026-10-15.md)。
 
 ## 代码位置
 

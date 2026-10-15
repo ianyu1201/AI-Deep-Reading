@@ -16,13 +16,15 @@
 
 ## macOS 预览包的补充材料
 
-安装包第一方代码为 MIT，**整个安装包并非单一 MIT 许可**。随包第三方组件按各自许可分发，包括：
+安装包第一方代码为 MIT，**整个安装包并非单一 MIT 许可**。实际携带的第三方组件按各自许可分发。源码依赖清单、归档声明与某个 Release 的实际二进制内容应分别核对。
 
 - `@img/sharp-libvips-darwin-arm64` 1.3.4：LGPL-3.0-or-later 及其各项上游依赖许可。提供精确原生库来源、构建脚本、补丁、依赖源码和 librsvg Cargo 锁文件对应的 crate 源码。
-- `sherpa-onnx` 1.13.8：其 macOS 原生组件中包含 eSpeak NG 静态代码；eSpeak NG 使用 GPLv3。对应 sherpa／eSpeak 源码、构建材料及独立 ONNX Runtime 声明随 Release 提供。
+- `sherpa-onnx` 1.13.8：`preview.1` 携带的 macOS 原生组件包含 GPLv3 eSpeak NG 静态代码；其精确源码、构建材料及独立 ONNX Runtime 声明已归档。`preview.2` 的裁剪规则省略语音平台 `.node`／`.dylib`，保留 SDK 的 JavaScript 入口、包元数据及许可材料；不得由归档中的 eSpeak 声明推断新包仍携带该二进制。实际结果以本轮发布清单和审计为准。
 - Python standalone、29 项 Python 依赖和本地嵌入模型：补充声明位于 `apps/desktop/packaging/licenses/third-party/`。完整 Electron／Chromium、Node 和 Python 声明保留在应用资源中。
 
-精确版本、上游地址、原始许可及 SHA-256 见该目录中的来源清单。对应源码资产为同一 Release 的 `AI-Deep-Reading-0.1.0-third-party-sources.tar.gz`，保留构建材料与修改／替换组件所需信息。第一方 MIT 声明不替代或收窄第三方许可证授予的权利。
+精确版本、上游地址、原始许可及 SHA-256 见该目录中的来源清单。对应源码资产为 `AI-Deep-Reading-0.1.0-third-party-sources.tar.gz`；`preview.2` 复用并原样附上 `preview.1` 的同一资产，其 SHA-256 为 `4eb951ef3fe49a378335067fb8552e742d978f9bcb72c694a16d2db1c0c62a58`。它提供保留的原生 libvips／sharp 对应来源，也保留已经省略的 sherpa／eSpeak 等来源超集。无需运行应用即可取得这些材料。第一方 MIT 声明不替代或收窄第三方许可证授予的权利。
+
+`preview.2` 保留原有许可目录及来源归档，不为缩包删除 LICENSE、NOTICE、版权声明或 LibreOffice 的 `licenses/`／`sources/`。办公平台的 `bin/`／`program/` 与语音平台原生负载被省略，归档中的旧组件说明不代表这些负载仍随新安装包发布。该包没有新增或升级第三方依赖；这一判断须随候选构建的版本及清单核对，不能用于未来版本自动放行。
 
 macOS 原生发布包排除了非目标平台的 `@img/sharp-wasm32` 可选回退组件，原生 sharp 保留并另做实际加载检查。
 

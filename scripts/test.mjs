@@ -19,3 +19,4 @@ run(process.execPath,['--test',...await tests('dsh-apple-read/tests')],resolve(r
 run('python3',['-m','unittest','discover','-s','packages/book-library','-p','test_library.py','-v']);
 run('python3',['scripts/test_open_client.py']);
 run('python3',['-B','scripts/test_audit_release.py']);
+run('python3',['-B','scripts/test_prune_package.py']);

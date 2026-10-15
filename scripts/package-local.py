@@ -4,6 +4,7 @@ No package download, credentials, reports, fixture books or private data are cop
 """
 import argparse
 import hashlib
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -127,6 +128,7 @@ def main():
     parser.add_argument('--output', default=str(ROOT/'dist/AI 深度阅读.app'))
     parser.add_argument('--minimum-macos', default='13.0', help='Declared minimum; audit-release.py checks every bundled Mach-O')
     parser.add_argument('--build-number', default='1')
+    parser.add_argument('--slim', action='store_true', help='Remove reviewed unused assets for the dedicated arm64 reading client')
     args=parser.parse_args()
     if not re.fullmatch(r'\d+\.\d+(?:\.\d+)?', args.minimum_macos): raise ValueError('Invalid minimum macOS version')
     if not args.build_number.isdecimal(): raise ValueError('Build number must be numeric')
@@ -201,6 +203,13 @@ def main():
     copy(ROOT/'THIRD_PARTY_NOTICES.md',resources/'THIRD_PARTY_NOTICES.md')
     notice='''AI 深度阅读 — Apple Silicon 预览构建\n\nElectron 44.7.0 / Chromium: ELECTRON-LICENSE 及 LICENSES.chromium.html。\nCodex CLI 0.144.6: runtime/codex/LICENSE 和 NOTICE；不包含认证数据。\nNode: runtimes/node/LICENSE。Python: runtimes/python/LICENSE.txt 与 licenses/third-party/。\nHarness SDK及依赖: app/apps/desktop/node_modules 内各包许可证及 package.json；补充声明在 licenses/third-party/。\nEPUB/Markdown: app/packages/reader-ui/dist/THIRD_PARTY.md 与 licenses。\n完整声明与对应上游源码见 THIRD_PARTY_NOTICES.md、licenses/third-party/ 和同一 GitHub Release 的源码材料。\n未纳入 Apple Books、Obsidian 专有资源。ad-hoc 签名，未公证。\n无模型密钥、个人数据、测试数据或示例书籍；具体结果见发布审计报告。\n'''
     (resources/'THIRD-PARTY-NOTICES.txt').write_text(notice)
+    pruning = None
+    if args.slim:
+        spec = importlib.util.spec_from_file_location('prune_package', ROOT/'scripts/prune-package.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        pruning = module.prune_package(out)
+        (out.parent/'pruning-report.json').write_text(json.dumps(pruning,ensure_ascii=False,indent=2)+'\n')
     # Changed bundle gets an ad-hoc development signature, not a Developer ID signature.
     run(['codesign','--force','--deep','--sign','-',out])
     evidence={'app':str(out.relative_to(ROOT)),'electron':electron_version,'node':run([resources/'runtimes/node/bin/node','--version']),
@@ -208,10 +217,15 @@ def main():
       'codex':{**codex_info,'bundledSha256':hashlib.sha256((resources/'runtime/codex/bin/codex').read_bytes()).hexdigest()},
       'architecture':run(['uname','-m']), 'minimumMacOS':plist.get('LSMinimumSystemVersion'),
       'excludedOptionalPackages':sorted(excluded_optional),
+      'slim':args.slim,
+      'pruning':pruning,
       'sourceHashes':{str(p.relative_to(app)):hashlib.sha256(p.read_bytes()).hexdigest() for p in app.rglob('*') if p.is_file() and 'node_modules' not in p.parts and '__pycache__' not in p.parts},
       'signature':'ad-hoc; not notarized','fixturesIncluded':False,'hostCredentialsIncluded':False}
     # A candidate built under dist/<staging>/ must not replace the current package's evidence.
     (out.parent/'package-evidence.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2))
-    print(json.dumps({k:v for k,v in evidence.items() if k != 'sourceHashes'},ensure_ascii=False,indent=2))
+    summary={k:v for k,v in evidence.items() if k not in {'sourceHashes','pruning'}}
+    if pruning is not None:
+        summary['pruning']={k:pruning[k] for k in ('groups','removedFiles','removedBytes','protectedFilesUnchanged')}
+    print(json.dumps(summary,ensure_ascii=False,indent=2))
 
 if __name__=='__main__': main()
