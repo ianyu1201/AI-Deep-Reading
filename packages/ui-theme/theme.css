@@ -1,0 +1,48 @@
+/* Canonical semantic palette. reader-ui/build.mjs copies this byte-for-byte into
+   each isolated page's assets; changes here never rely on cross-page inheritance. */
+:root {
+  --ui-app:#ffffff; --ui-toolbar:#f7f9fc; --ui-sidebar:#f4f7fb;
+  --ui-text:#252b3a; --ui-muted:#657083; --ui-line:#e5eaf2;
+  --ui-on-accent:#ffffff; --ui-accent:#7052ed; --ui-accent-hover:#6244d7; --ui-link:#6243cc;
+  --ui-hover:#f0edf9; --ui-selected:#eeebff; --ui-selected-text:#593bc3;
+  --ui-focus:#7052ed; --ui-input:#ffffff; --ui-placeholder:#686d80;
+  --ui-selection:#e4dcfa; --ui-selection-text:#29213e;
+  --ui-success:#347247; --ui-warning:#805c16; --ui-error:#a03935;
+  --ui-error-bg:#fff3ef; --ui-disabled:#858899;
+  --ui-cover-shadow:0 9px 24px #26385514;
+  --ui-card-shadow:0 2px 5px #26385506;
+  --ui-document:#f4f6f9;
+  --reading-paper:#f4f6f9; --reading-ink:#282938; --reading-muted:#606579;
+  --reading-link:#6243cc; --reading-selection:#e4dcfa; --reading-selection-text:#29213e;
+}
+body[data-theme=dark] {
+  color-scheme:dark;
+  --ui-document:#23232b;
+  --ui-app:#23232b; --ui-toolbar:#2b2b35; --ui-sidebar:#292932;
+  --ui-text:#ededf3; --ui-muted:#b9bacb; --ui-line:#454550;
+  --ui-on-accent:#241837; --ui-accent:#c7b6ff; --ui-accent-hover:#dbcfff; --ui-link:#c7b6ff;
+  --ui-hover:#373340; --ui-selected:#403456; --ui-selected-text:#e3d8ff;
+  --ui-focus:#c7b6ff; --ui-input:#292932; --ui-placeholder:#b9bacb;
+  --ui-selection:#554171; --ui-selection-text:#ffffff;
+  --ui-success:#9ad3a9; --ui-warning:#ebcb82; --ui-error:#ffb4aa;
+  --ui-error-bg:#432e32; --ui-disabled:#9393a5;
+}
+body[data-reading-theme=paper] {
+  --reading-paper:#f4f6f9; --reading-ink:#282938; --reading-muted:#606579;
+}
+body[data-reading-theme=dark] {
+  --reading-paper:#23232b; --reading-ink:#ededf3; --reading-muted:#b9bacb;
+  --reading-link:#c7b6ff; --reading-selection:#554171; --reading-selection-text:#ffffff;
+}
+::selection {background:var(--ui-selection);color:var(--ui-selection-text)}
+input::placeholder,textarea::placeholder {color:var(--ui-placeholder);opacity:1}
+
+/* App appearance is independent from the EPUB paper preference. */
+body[data-accent=blue]{--ui-accent:#2969e8;--ui-accent-hover:#2058cb;--ui-link:#245ecb;--ui-focus:#2969e8;--ui-hover:#f0f5ff;--ui-selected:#e6efff;--ui-selected-text:#245ecb;--ui-selection:#dce9ff;--ui-selection-text:#1b3156;--reading-link:#245ecb;--reading-selection:#dce9ff;--reading-selection-text:#1b3156}
+body[data-accent=green]{--ui-accent:#28724c;--ui-accent-hover:#205d3e;--ui-link:#205d3e;--ui-focus:#28724c;--ui-hover:#edf5ef;--ui-selected:#e1f0e6;--ui-selected-text:#205d3e}
+body[data-accent=purple-panels]:not([data-theme=dark]){--ui-toolbar:#f9f9fc;--ui-sidebar:#f8f8fb;--ui-muted:#606579;--ui-line:#e4e4ed}
+body[data-theme=dark][data-accent=blue]{--ui-accent:#a8c7ff;--ui-accent-hover:#c4d9ff;--ui-link:#a8c7ff;--ui-focus:#a8c7ff;--ui-hover:#303b4d;--ui-selected:#344968;--ui-selected-text:#d8e7ff}
+body[data-theme=dark][data-accent=green]{--ui-accent:#9dd8b3;--ui-accent-hover:#bce9cb;--ui-link:#9dd8b3;--ui-focus:#9dd8b3;--ui-hover:#2e4035;--ui-selected:#355642;--ui-selected-text:#d5f2df}
+
+body[data-reading-theme=dark][data-accent=blue]{--reading-link:#a8c7ff;--reading-selection:#344968;--reading-selection-text:#ffffff}
+body[data-theme=dark]{--ui-card-shadow:none}

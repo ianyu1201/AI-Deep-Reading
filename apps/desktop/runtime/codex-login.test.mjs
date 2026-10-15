@@ -1,0 +1,8 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {EventEmitter} from 'node:events';import {beginCodexLogin} from './codex-login.mjs';
+function setup(url='https://auth.openai.com/oauth/authorize?state=synthetic'){
+ const t=new EventEmitter();let closed=0,cancelled=0;Object.assign(t,{start:async()=>({available:false}),login:async()=>({type:'chatgpt',loginId:'login',authUrl:url}),cancelLogin:async()=>cancelled++,close:async()=>closed++});
+ return {t,options:{codexHome:'/tmp/isolated-reading-auth',transportFactory:()=>t,resolveCommand:async()=>({path:'/tmp/official-codex'}),openURL:async()=>{},timeoutMs:5000},get closed(){return closed},get cancelled(){return cancelled}};
+}
+test('OAuth completion only matches its login and closes owned process',async()=>{const f=setup(),flow=await beginCodexLogin(f.options);f.t.emit('loginCompleted',{loginId:'other',success:true});assert.equal(f.closed,0);f.t.emit('loginCompleted',{loginId:'login',success:true});assert.equal((await flow.completed).authenticated,true);assert.equal(f.closed,1);});
+test('failure, cancel and timeout never become authenticated',async()=>{for(const kind of ['failure','cancel','timeout']){const f=setup();const flow=await beginCodexLogin({...f.options,timeoutMs:kind==='timeout'?5:5000});const rejected=assert.rejects(flow.completed);if(kind==='failure')f.t.emit('loginCompleted',{loginId:'login',success:false});if(kind==='cancel')await flow.cancel();await rejected;assert.equal(f.closed,1);}});
+test('unexpected login URLs never open; errors remain generic',async()=>{const f=setup('https://example.com/login');let opens=0;await assert.rejects(beginCodexLogin({...f.options,openURL:async()=>opens++}),/无法开始/);assert.equal(opens,0);assert.equal(f.closed,1);});

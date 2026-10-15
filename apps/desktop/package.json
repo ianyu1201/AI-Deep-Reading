@@ -1,0 +1,22 @@
+{
+  "name": "ai-reading-desktop",
+  "version": "0.1.0-dev.1",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.mjs",
+  "scripts": {
+    "start": "node electron/start.mjs",
+    "build:readers": "npm --prefix ../../packages/reader-ui run build",
+    "test:desktop": "node tests/open-source-smoke.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.2.0-rc.2",
+    "@deepseek-ai/dsh-sdk-client": "0.2.0-rc.2",
+    "@deepseek-ai/dsh-host-webserver": "0.2.0-rc.2",
+    "@deepseek-ai/dsh-session-turn-outline": "0.2.0-rc.2"
+  },
+  "devDependencies": {
+    "electron": "44.7.0",
+    "playwright": "1.58.2"
+  }
+}

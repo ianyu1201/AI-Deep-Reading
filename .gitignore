@@ -1,0 +1,41 @@
+# Dependencies and reproducible output
+node_modules/
+dist/
+.build/
+.cache/
+.pnpm-store/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+
+# Private application state, books, indexes and acceptance captures
+.test-data/
+.fixtures/
+reports/
+/packages/reader-ui/fixtures/security/
+.private/
+index/
+.index/
+*.npy
+*.sqlite*
+*.db
+*.ses
+*.epub
+*.pdf
+*.app/
+*.app-backup/
+*.dmg
+*.zip
+*.log
+
+# Credentials must never be tracked
+.env
+.env.*
+.credentials.yaml
+auth.json
+credentials.json
+*.pem
+*.key
+eval_questions.json

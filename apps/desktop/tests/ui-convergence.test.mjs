@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {bookMetadata} from '../../../packages/reader-ui/src/book-metadata.js';
+import {displayPreview} from '../shell/display-preview.js';
+test('known bodyless book projects only allowed readable metadata without mutations',()=>{const n={body:'',data:{object_type:'book',title:'书名',author:'作者',source_assets:[{path:'/Users/private/a.epub'}],content_hash:'secret-hash',api_key:'secret'}};const before=JSON.stringify(n);assert.deepEqual(bookMetadata(n),[['书名','书名'],['作者','作者']]);assert.equal(JSON.stringify(n),before);assert.equal(bookMetadata({...n,body:'用户正文'}),null);assert.equal(bookMetadata({body:'',data:{title:'普通笔记'}}),null);assert.deepEqual(bookMetadata({body:'',data:{object_type:'book',title:'/Users/private'}}),[]);});
+test('preview removes only duplicate leading title lines and preserves underlying quote',()=>{const quote='母亲\n母亲\n她说了这句话。\n母亲';assert.equal(displayPreview(quote,'母亲'),'她说了这句话。\n母亲');assert.equal(quote,'母亲\n母亲\n她说了这句话。\n母亲');assert.equal(displayPreview('母亲从未离开。','母亲'),'母亲从未离开。');});

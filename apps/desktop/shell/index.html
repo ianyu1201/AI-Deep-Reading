@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI 深度阅读</title><link rel="stylesheet" href="./theme.css"><link rel="stylesheet" href="./shell.css"><link rel="stylesheet" href="./session-ui.css"><link rel="stylesheet" href="./motion.css"><script src="./motion.js"></script></head>
+<body>
+<header class="titlebar">
+ <span id="test-profile" hidden>隔离验收预览</span>
+ <button id="exit-immersive" class="outlined" hidden><span class="ui-icon" style="--icon:url(./icons/chevron-left.svg)" aria-hidden="true"></span>返回工作台</button>
+ <div class="window-brand"><span id="window-title" class="window-title"></span><span class="window-subtitle">更深入的阅读，更广阔的思考</span></div><div class="title-actions"><button id="global-chat" aria-label="打开 AI 对话" title="打开 AI 对话"><span class="ui-icon" style="--icon:url(./icons/panel-right-open.svg)" aria-hidden="true"></span></button><button id="appearance-open" title="设置" aria-label="设置"><span class="ui-icon" style="--icon:url(./icons/settings.svg)" aria-hidden="true"></span></button></div>
+</header>
+<nav id="navigation-rail" aria-label="工作区">
+<button id="all-books" title="书库" aria-label="书库"><span class="ui-icon" style="--icon:url(./icons/library.svg)" aria-hidden="true"></span></button>
+<button id="current-reading" title="工作台" aria-label="工作台"><span class="ui-icon" style="--icon:url(./icons/book-open.svg)" aria-hidden="true"></span></button>
+<button id="sidebar-toggle" title="笔记" aria-label="笔记" aria-controls="resources" aria-expanded="false"><span class="ui-icon" style="--icon:url(./icons/files.svg)" aria-hidden="true"></span></button>
+</nav>
+<div id="chat-resizer" role="separator" aria-label="调整 AI 对话宽度" aria-orientation="vertical" tabindex="0" hidden></div>
+<aside id="resources" class="resources" aria-label="阅读资源">
+ <p id="current-book-label" hidden></p>
+ <section class="notes-section"><header class="resource-heading"><h2 id="notes-heading">本书笔记</h2><button id="notes-search-toggle" title="搜索笔记关键词" aria-label="搜索笔记关键词" aria-expanded="false" aria-controls="resource-search"><span class="ui-icon" style="--icon:url(./icons/search.svg)" aria-hidden="true"></span></button><button id="resource-close" title="收起笔记资源栏" aria-label="收起笔记资源栏"><span class="ui-icon" style="--icon:url(./icons/panel-left-close.svg)" aria-hidden="true"></span></button></header><input id="resource-search" type="search" aria-label="搜索本书笔记关键词" placeholder="输入笔记关键词" hidden><p id="notes-status" class="resource-note"></p><nav id="note-tree" aria-label="本书笔记树"></nav></section>
+</aside>
+<section id="reading-bar" class="reading-bar" aria-label="内容操作">
+
+ <button id="return-workbench" class="outlined" hidden><span class="ui-icon" style="--icon:url(./icons/chevron-left.svg)" aria-hidden="true"></span>返回工作台</button>
+ <nav id="reading-tabs" aria-label="阅读内容"><button id="guide-tab" aria-pressed="true">导读</button><button id="original-tab" aria-pressed="false">原文</button><button id="annotations-tab" aria-pressed="false">标注</button></nav>
+ <span id="full-view-title" hidden></span>
+
+</section>
+<main id="guide-panel" class="guide-panel">
+ <div id="no-book" class="empty-state"><span class="ui-icon empty-icon" style="--icon:url(./icons/book-open.svg)" aria-hidden="true"></span><h1>开始一次阅读</h1><p>选择一本书，从原文出发，留下自己的理解。</p><button id="choose-book" class="primary">浏览书库</button></div>
+ <article id="book-guide" class="guide-content" hidden>
+  <p id="fixture-banner" class="fixture-banner" hidden>以下内容为隔离的合成验收示例，不代表真实书籍分析或知识库。</p>
+  <header class="book-intro"><img id="guide-cover" alt="书籍封面" hidden><div><p class="eyebrow">本书导读</p><h1 id="guide-title" hidden></h1><p id="guide-author"></p><p id="analysis-scope" class="analysis-scope">分析尚未接入</p></div></header>
+  <div id="guide-empty" class="guide-empty"><h2>从原文开始</h2><p>这本书还没有可用导读。书籍分析接通后，这里会展示核心要点、值得阅读的片段与实际分析范围。</p><button id="read-original" class="primary"><span class="ui-icon" style="--icon:url(./icons/book-open.svg)" aria-hidden="true"></span>读原文</button></div>
+  <div id="guide-details" hidden></div>
+
+ </article>
+ <article id="annotations-panel" class="guide-content" hidden><p id="annotations-book" hidden></p><div class="guide-empty"><h2>暂无可读取的标注</h2><p>本书标注服务尚未接入。这里会按章节显示已有高亮、备注与来源；当前不提供 Apple Books 写回或同步。</p></div></article>
+</main>
+<aside id="chat-panel" class="chat-panel" aria-label="阅读工具">
+<nav id="right-tools" role="tablist" aria-label="阅读工具">
+<button id="tool-chat" role="tab" aria-controls="tool-chat-panel">AI 对话</button><button id="tool-notes" role="tab" aria-controls="resources">本书笔记</button><button id="tool-guide" role="tab" aria-controls="tool-guide-panel">导读</button><button id="tool-annotations" role="tab" aria-controls="annotations-panel">标注</button></nav>
+<div id="tool-running" hidden role="status">AI 正在回答 <button id="return-chat">返回对话</button><button id="tool-stop">停止本轮</button></div>
+<section id="tool-chat-panel" role="tabpanel" aria-labelledby="tool-chat">
+ <header class="chat-heading"><h2 id="session-title">阅读讨论</h2><div class="chat-heading-actions"> <div class="session-controls"><button id="session-history" aria-label="会话历史" title="会话历史"><span class="ui-icon" style="--icon:url(./icons/history.svg)" aria-hidden="true"></span></button><button id="new-session" aria-label="新建主题会话" title="新建主题会话"><span class="ui-icon" style="--icon:url(./icons/plus.svg)" aria-hidden="true"></span></button></div><button id="chat-expand" aria-label="展开对话"><span class="ui-icon" style="--icon:url(./icons/maximize.svg)" aria-hidden="true"></span></button></div></header>
+
+ <section id="session-drawer" class="session-drawer" aria-label="本书会话" hidden><header><h3>本书会话</h3><button id="session-close" aria-label="关闭会话历史">关闭</button></header><input id="session-search" type="search" aria-label="搜索本书会话" placeholder="搜索本书会话"><select id="session-filter" aria-label="会话范围"><option value="active">当前会话</option><option value="archived">归档</option><option value="deleted">回收站</option></select><div id="session-list"></div><section id="session-confirm" role="alertdialog" aria-label="确认会话操作" hidden></section></section>
+ <p id="chat-context" hidden></p><div id="chat-notice" class="chat-notice" role="status" aria-live="polite"></div>
+ <div id="messages" class="messages" aria-label="会话消息"></div>
+ <div id="chat-error" class="chat-error" role="alert" hidden></div>
+ <form id="composer" class="composer"><label class="sr-only" for="question">向 AI 提问</label><textarea id="question" rows="3" placeholder="继续提问，或写下你对这段内容的理解…"></textarea><div class="composer-footer"><span id="chat-status" aria-live="polite">正在准备会话</span><button id="send" class="primary" type="submit"><span class="ui-icon" style="--icon:url(./icons/send.svg)" aria-hidden="true"></span>发送</button><button id="stop" class="stop" type="button" hidden><span class="ui-icon" style="--icon:url(./icons/square.svg)" aria-hidden="true"></span>停止本轮</button></div></form>
+</section><section id="tool-guide-panel" role="tabpanel" aria-labelledby="tool-guide" hidden><p id="tool-guide-empty">选择一本书后查看导读。</p><button id="expand-guide">在中间展开导读</button><p id="guide-expanded-hint" hidden>完整导读已在中间展开。</p></section>
+</aside>
+<dialog id="appearance-dialog"><header><h2>设置</h2><button id="appearance-close" aria-label="关闭设置">关闭</button></header><label>基础颜色<select id="app-mode"><option value="system">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option></select></label><label>强调色<select id="app-accent"><option value="purple">紫色 · 中性面板</option><option value="blue">蓝色</option><option value="green">绿色</option><option value="purple-panels">紫色 · 原有面板</option></select></label><p>EPUB 的纸张、白色与夜间阅读偏好单独保留。</p><section id="search-policy-settings"><label><input id="auto-book-search" type="checkbox">自动检索当前书</label><p>需要书中依据时查找，不自动发送整书。关闭后停止自动检索。</p><div id="session-search-override" hidden><p>此会话已单独关闭检索。</p><button id="session-search-restore">恢复本会话检索</button></div><p id="search-policy-status" role="status"></p><div id="search-policy-migration" hidden><p>旧版未标明意图的检索设置已采用新默认，可随时关闭。明确关闭的会话仍保持关闭。</p><button id="search-policy-ack">知道了</button></div></section><p id="appearance-status" role="status"></p><button id="runtime">查看运行详情</button></dialog>
+<script src="./shell.js" type="module"></script><script src="./appearance.js"></script></body></html>

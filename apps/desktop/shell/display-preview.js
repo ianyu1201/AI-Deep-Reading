@@ -1,0 +1,1 @@
+export function displayPreview(text,title){const lines=String(text??'').split(/\r?\n/);while(lines.length&&(!lines[0].trim()||lines[0].trim()===String(title??'').trim()))lines.shift();return lines.join('\n').trim();}

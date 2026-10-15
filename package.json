@@ -1,0 +1,16 @@
+{
+  "name": "ai-deep-reading",
+  "version": "0.1.0-dev.1",
+  "private": true,
+  "license": "MIT",
+  "description": "AI 深度阅读：独立 macOS EPUB 阅读、Markdown 笔记与 AI 伴读工作台",
+  "repository": "github:ianyu1201/AI-Deep-Reading",
+  "engines": { "node": ">=22.22.3 <23" },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "build": "npm --prefix packages/reader-ui run build",
+    "start": "npm --prefix apps/desktop start",
+    "test": "node scripts/test.mjs",
+    "test:desktop": "node apps/desktop/tests/open-source-smoke.mjs"
+  }
+}

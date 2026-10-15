@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {noteSources,openNoteSource} from '../src/source-note.js';
+const ref={book_id:'0123456789abcdef',book_version_id:'bv_0123456789abcdef',span_id:'sp_0123456789abcdef_0_2_5',href:'body.xhtml',start_codepoint:2,end_codepoint:5,text_hash:'a'.repeat(64)};
+const note={id:'notes/观察.md',data:{book_evidence:[ref]}};
+test('only real structurally valid note evidence produces entries, duplicates collapse',()=>{assert.equal(noteSources({...note,data:{book_evidence:[ref,ref,{...ref,book_id:'other'}]}}).length,1);assert.deepEqual(noteSources({id:'x',data:{book:'matching title'}}),[]);assert.deepEqual(noteSources({...note,deleted:true}),[]);assert.deepEqual(noteSources({...note,data:{book_evidence:[{...ref,text_hash:null}]}}),[]);});
+test('navigation persists draft first, passes only authoritative note/span IDs',async()=>{const events=[];await openNoteSource({note,spanId:ref.span_id,composing:false,persist:()=>{events.push('persist');return true;},request:async payload=>{events.push(payload);return {ok:true};}});assert.deepEqual(events,['persist',{noteId:note.id,spanId:ref.span_id}]);});
+test('composition, failed draft persistence and source mismatch block navigation',async()=>{let calls=0;const options={note,spanId:ref.span_id,persist:()=>true,request:()=>{calls++;}};await assert.rejects(openNoteSource({...options,composing:true}));await assert.rejects(openNoteSource({...options,persist:()=>false}));await assert.rejects(openNoteSource({...options,spanId:'other'}));assert.equal(calls,0);});
